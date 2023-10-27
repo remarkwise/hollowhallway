@@ -2,6 +2,7 @@ import "./css/styles.css";
 import "./css/Nav.css";
 import { useState } from "react";
 // import Quotes from "./components/Quotes";
+import Character from "./components/Character"; 
 import Darot from "./components/Darot";
 
 const App = () => {
@@ -9,7 +10,8 @@ const App = () => {
   const [formData, setFormData] = useState({
     Name: "",
     Location: "",
-    NavDarot: true
+    NavCharacter: false,
+    NavDarot: false
   });
   const valueUpdated = (e) => {
     setFormData({
@@ -17,21 +19,26 @@ const App = () => {
       [e.target.name]: e.target.value
     });
   };
+  const navigateClick = (e) => {
+    setFormData({
+      ...formData,
+      NavCharacter: false,
+      NavDarot: false,
+      [e.target.id]: true
+    });
+    console.log("FormData",formData);
+  }
 
   // Nav
   const Nav = () => {
     return (
       <nav className="nav">
         <ul className="nav-items">
-          <li
-            onClick={() =>
-              setFormData({ ...formData, NavDarot: !formData.NavDarot })
-            }
-          >
-            <div className="door">Darot</div>
+          <li onClick={navigateClick}>
+            <div className="door" id="NavCharacter">Character</div>
           </li>
-          <li>
-            <div className="door">Hi Will</div>
+          <li onClick={navigateClick}>
+            <div className="door" id="NavDarot">Darot Cards</div>
           </li>
         </ul>
       </nav>
@@ -43,6 +50,7 @@ const App = () => {
     <div className="App">
       <Nav />
       {formData.NavDarot && <Darot />}
+      {formData.NavCharacter && <Character />}
     </div>
   );
 
