@@ -31,7 +31,7 @@ const App = () => {
             <div className="door">Darot</div>
           </li>
           <li>
-            <div className="door">End</div>
+            <div className="door">Hi Will</div>
           </li>
         </ul>
       </nav>
