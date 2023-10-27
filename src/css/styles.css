@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Cinzel&family=Mooli&family=Philosopher&family=Satisfy&family=Shadows+Into+Light&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  /* Define a few values for general use */
+  --pad: 0.5rem; /* generic padding */
+  --bd: 3px; /* border size */
+}
+
+html {
+  height: 100%;
+  background: #090a0f radial-gradient(ellipse at top, #1b2735 0%, #090a0f 90%)
+    no-repeat;
+  display: grid;
+  place-items: center;
+}
+body {
+  margin: 0; /* Remove HTML default spacing */
+  padding: calc(2 * var(--pad));
+  font-size: calc(0.625vmin + 0.75rem); /* Responsive font */
+  /*
+  font-family: "Alice", serif;
+  font-family: "Cinzel", serif;
+  font-family: "Philosopher", sans-serif;
+  font-family: "Satisfy", cursive;
+  font-family: "Shadows Into Light", cursive;
+  */
+  font-family: "Mooli", sans-serif;
+}
+h1,
+h2 {
+  font-family: "Cinzel", serif;
+  font-size: 250%;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.text-lg {
+  font-size: 125%;
+}
+.subtle {
+  opacity: 0.6;
+}
+a,
+button {
+  cursor: pointer;
+}
+.App {
+  text-align: center;
+}
+
+.name_field {
+  font-size: 15pt;
+}
+.board {
+  background: #230101;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  color: #cbcbcb;
+  padding: 1%;
+  --border-size: 3px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 50%,
+      #213
+    ),
+    conic-gradient(from var(--border-angle), transparent 40%, #08d, #f90);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: bg-spin 10s linear infinite;
+}
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+&:hover {
+  animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.results {
+  font-size: 200%;
+  text-shadow: 0px 0px 3px #bbb, 0px 0px 8px #1b2735;
+}
+
+.expectations {
+  display: block;
+  background: #ccc;
+  padding: 10px 0;
+  text-align: left;
+}
+.expectations li {
+  border-top: 1px solid #000;
+  list-style: none;
+  margin: 1% 0;
+  padding-bottom: 0;
+  padding-top: 1%;
+  width: 94%;
+}
+.expectations li:first-child {
+  border-top: 0px solid #000;
+}
+.expectations .subtle {
+  display: block;
+  padding-top: 10px;
+}
+.question {
+  color: #230101;
+}
+.explanation-quote {
+  display: block;
+  clear: both;
+}
+@media screen and (min-width: 480px) {
+  /*
+  .board,
+  .expectations {
+    display: inline-block;
+    margin: 1%;
+    width: 47%;
+  }
+  */
+}

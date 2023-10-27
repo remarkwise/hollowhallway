@@ -1,0 +1,104 @@
+{
+  "1": [
+    {
+      "label": "Now, you present position is",
+      "statement": "Situation"
+    },
+    {
+      "label": "Soon, anticipate",
+      "statement": "Preparation"
+    },
+    {
+      "label": "Before, you were",
+      "statement": "Reflection"
+    },
+    {
+      "label": "Future you will experience",
+      "statement": "Direction"
+    },
+    {
+      "label": "Past experiences of",
+      "statement": "Acceptance"
+    },
+    {
+      "label": "Chances are strong for",
+      "statement": "Fate"
+    }
+  ],
+  "9": [
+    {
+      "label": "Now, you are",
+      "statement": "Present Position"
+    },
+    {
+      "label": "Soon, anticipate",
+      "statement": "Prepare For"
+    },
+    {
+      "label": "Before, you were",
+      "statement": "Remember"
+    },
+    {
+      "label": "Future you will experience",
+      "statement": "Seek"
+    },
+    {
+      "label": "Past experiences of",
+      "statement": "Accept"
+    },
+    {
+      "label": "Consider",
+      "statement": "Consider"
+    },
+    {
+      "label": "Release desires of",
+      "statement": "Release"
+    },
+    {
+      "label": "A choice is being presented around",
+      "statement": "Opportunity"
+    },
+    {
+      "label": "Chances are strong for",
+      "statement": "Wild"
+    }
+  ],
+  "explicit": [
+    {
+      "label": "Now",
+      "statement": "Fucking Right Now"
+    },
+    {
+      "label": "Soon",
+      "statement": "Get Ready"
+    },
+    {
+      "label": "Before",
+      "statement": "Don't Forget Fucker"
+    },
+    {
+      "label": "Future",
+      "statement": "It's Coming for You..."
+    },
+    {
+      "label": "Past",
+      "statement": "Accept"
+    },
+    {
+      "label": "With",
+      "statement": "Consider"
+    },
+    {
+      "label": "Without",
+      "statement": "Release"
+    },
+    {
+      "label": "Choice",
+      "statement": "Opportunity"
+    },
+    {
+      "label": "Chance",
+      "statement": "Wild"
+    }
+  ]
+}
