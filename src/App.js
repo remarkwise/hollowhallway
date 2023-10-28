@@ -29,7 +29,9 @@ const App = () => {
     // console.log("Open", e.target);
     document.title = appTitle + " | " + e.target.innerText;
     document.getElementById("mainNav").classList.add("zoom");
-    $('meta[name="description"]').attr("content", e.target.innerText);
+    document
+      .querySelector('meta[name="description"]')
+      .setAttribute("content", e.target.innerText);
     setFormData({
       ...formData,
       NavWelcome: false,
