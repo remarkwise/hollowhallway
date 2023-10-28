@@ -5,6 +5,8 @@ import { useState } from "react";
 import Character from "./components/Character";
 import Darot from "./components/Darot";
 
+const appTitle = "Hollow Hallway";
+
 const App = () => {
   // Form
   const [formData, setFormData] = useState({
@@ -20,7 +22,9 @@ const App = () => {
     });
   };
   const navigateClick = (e) => {
-    console.log("Open", e.target.id);
+    console.log("Open", e.target);
+    document.title = appTitle + " | " + e.target.innerText;
+    $('meta[name="description"]').attr("content", e.target.innerText);
     setFormData({
       ...formData,
       NavCharacter: false,
@@ -40,8 +44,12 @@ const App = () => {
               <div className="door-front">
                 <div className="knob"></div>
               </div>
-              <div className="door-back" id="NavCharacter">
-                Character
+              <div
+                className="door-back"
+                id="NavCharacter"
+                title="Character Designer leverages AI to identify archetypes, attributes, and references."
+              >
+                Character Designer
               </div>
             </div>
           </li>
