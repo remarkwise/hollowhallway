@@ -25,13 +25,12 @@ const App = () => {
   const homeClick = () => {
     document.getElementById("mainNav").classList.remove("zoom");
   };
+  const metaDesc = document.querySelector('meta[name="description"]');
   const navigateClick = (e) => {
     // console.log("Open", e.target);
     document.title = appTitle + " | " + e.target.innerText;
     document.getElementById("mainNav").classList.add("zoom");
-    document
-      .querySelector('meta[name="description"]')
-      .setAttribute("content", e.target.innerText);
+    metaDesc.setAttribute("content", e.target.innerText);
     setFormData({
       ...formData,
       NavWelcome: false,
