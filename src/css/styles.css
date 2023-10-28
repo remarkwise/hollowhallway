@@ -35,6 +35,9 @@ h2 {
   line-height: 1;
   margin-bottom: 0;
 }
+.center {
+  text-align: center;
+}
 .text-lg {
   font-size: 125%;
 }

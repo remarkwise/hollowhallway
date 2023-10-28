@@ -1,2 +1,36 @@
-.Character { text-align: left; }
-.CharacterResponse { background: #eee; }
+.Character {
+  text-align: left;
+}
+.CharacterDesignerPrompt {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #666;
+  border-radius: 6px;
+  box-shadow: 0 0 3px #eee;
+  color: #eee;
+  padding: 6px;
+}
+.CharacterResponse {
+  background: #eee;
+}
+.CharacterDesignerButton {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #666;
+  border-radius: 6px;
+  box-shadow: 0 0 3px #eee;
+  color: #666;
+  margin: 0 auto;
+  padding: 6px;
+  text-align: center;
+}
+.CharacterDesignerButton:hover {
+  font-weight: bold;
+  color: #ccc;
+}
+.loading {
+  background: url("https://cdnjs.cloudflare.com/ajax/libs/galleriffic/2.0.1/css/loader.gif")
+    0 50% no-repeat;
+  display: block;
+  padding: 100px 0 10px 0;
+  text-align: center;
+  width: 100%;
+}
