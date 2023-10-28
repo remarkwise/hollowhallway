@@ -13,6 +13,8 @@ const App = () => {
   const [formData, setFormData] = useState({
     Name: "",
     Location: "",
+    NavHome: true,
+    NavWelcome: false,
     NavCharacter: false,
     NavDarot: false,
   });
@@ -24,7 +26,10 @@ const App = () => {
     });
   };
   const homeClick = () => {
-    document.getElementById("mainNav").classList.remove("zoom");
+    setFormData({
+      ...formData,
+      NavHome: true,
+    });
   };
   const metaDesc = document.querySelector('meta[name="description"]');
   const navigateClick = (e) => {
@@ -34,6 +39,7 @@ const App = () => {
     metaDesc.setAttribute("content", e.target.innerText);
     setFormData({
       ...formData,
+      NavHome: false,
       NavWelcome: false,
       NavCharacter: false,
       NavDarot: false,
@@ -44,8 +50,12 @@ const App = () => {
 
   // Nav
   const Nav = () => {
+    let navClassName = "nav";
+    if (!formData.NavHome) {
+      navClassName += " zoom";
+    }
     return (
-      <nav className="nav" id="mainNav">
+      <nav className={navClassName} id="mainNav">
         <div className="homeLogo">Hollow Hallway</div>
         <ul className="nav-items">
           <li onClick={navigateClick}>
