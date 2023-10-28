@@ -29,8 +29,9 @@ function Welcome() {
         a friend?
       </p>
       <p>
-        Let's switch it up. Take 15 to 45 minutes and let's play some games that
-        I've spent over a decade of research, prototyping, and practicing.
+        Let's switch it up together and have fun. Take 15 to 45 minutes and
+        let's play some games that I've spent over a decade of research,
+        prototyping, and practicing.
       </p>
       <p>
         <a href="#">Schedule a faciliatated session</a>
