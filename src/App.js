@@ -15,18 +15,24 @@ const App = () => {
     NavCharacter: false,
     NavDarot: false,
   });
+  const homeValues = formData;
   const valueUpdated = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
+  const homeClick = () => {
+    document.getElementById("mainNav").classList.remove("zoom");
+  };
   const navigateClick = (e) => {
-    console.log("Open", e.target);
+    // console.log("Open", e.target);
     document.title = appTitle + " | " + e.target.innerText;
+    document.getElementById("mainNav").classList.add("zoom");
     $('meta[name="description"]').attr("content", e.target.innerText);
     setFormData({
       ...formData,
+      NavWelcome: false,
       NavCharacter: false,
       NavDarot: false,
       [e.target.id]: true,
@@ -37,8 +43,24 @@ const App = () => {
   // Nav
   const Nav = () => {
     return (
-      <nav className="nav">
+      <nav className="nav" id="mainNav">
+        <div className="homeLogo">Hollow Hallway</div>
         <ul className="nav-items">
+          <li onClick={navigateClick}>
+            <div className="door">
+              <div className="door-front">
+                <div className="knob"></div>
+              </div>
+              <div
+                className="door-back"
+                id="NavWelcome"
+                title="Hollow Hallway."
+              >
+                Come On In
+              </div>
+              <div className="door-mat"></div>
+            </div>
+          </li>
           <li onClick={navigateClick}>
             <div className="door">
               <div className="door-front">
