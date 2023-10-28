@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "../css/Character.css";
+require("dotenv").config();
 
 // OpenAI key
 const API_KEY = process.env.REACT_APP_OPENAI_API_KEY; // secure -> environment variable
-console.log("API",API_KEY);
+console.log("API", API_KEY);
 
 function Character() {
   const [tweet, setTweet] = useState("");
