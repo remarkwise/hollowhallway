@@ -3,6 +3,7 @@ import TextField from "./TextField";
 import Deck from "./Deck";
 import GamePlays from "./GamePlay";
 import PlayCard from "./PlayCard";
+import "../css/Darot.css";
 
 const Darot = () => {
   // Form

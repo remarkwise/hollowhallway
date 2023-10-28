@@ -61,7 +61,7 @@ function Character() {
 
   return (
     <div className="Character">
-      <h2>Character Designer</h2>
+      <h2 className="center">Character Designer</h2>
       <p className="tagline">Open the door to your main character</p>
       <p>
         <textarea

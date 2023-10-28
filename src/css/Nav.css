@@ -27,6 +27,9 @@
 .nav.zoom {
   zoom: 0.5;
 }
+.nav.zoom .door-mat {
+  display: none;
+}
 .homeLogo {
   color: #ccc;
   font-family: "Alice", serif;
