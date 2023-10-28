@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "../css/Character.css";
-
-const API_KEY = "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"; // secure -> environment variable
+require('dotenv').config() 
+const API_KEY = process.env.OPENAIAPIKEY; // secure -> environment variable
 
 function Character() {
   const [tweet, setTweet] = useState("");

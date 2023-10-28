@@ -53,7 +53,8 @@
 
 /* Style the front side (fallback if image is missing) */
 .play-card-front {
-  background: #2d2d2d url("") 50% 50%;
+  background: #2d2d2d;
+  background-position: 50% 50%;
   border: 3px double #444;
   color: #eeeddd;
 }
