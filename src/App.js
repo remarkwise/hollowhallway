@@ -2,7 +2,7 @@ import "./css/styles.css";
 import "./css/Nav.css";
 import { useState } from "react";
 // import Quotes from "./components/Quotes";
-import Character from "./components/Character"; 
+import Character from "./components/Character";
 import Darot from "./components/Darot";
 
 const App = () => {
@@ -11,23 +11,24 @@ const App = () => {
     Name: "",
     Location: "",
     NavCharacter: false,
-    NavDarot: false
+    NavDarot: false,
   });
   const valueUpdated = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
   const navigateClick = (e) => {
+    console.log("Open", e.target.id);
     setFormData({
       ...formData,
       NavCharacter: false,
       NavDarot: false,
-      [e.target.id]: true
+      [e.target.id]: true,
     });
-    console.log("FormData",formData);
-  }
+    console.log("FormData", formData);
+  };
 
   // Nav
   const Nav = () => {
@@ -35,10 +36,24 @@ const App = () => {
       <nav className="nav">
         <ul className="nav-items">
           <li onClick={navigateClick}>
-            <div className="door" id="NavCharacter">Character</div>
+            <div className="door">
+              <div className="door-front">
+                <div className="knob"></div>
+              </div>
+              <div className="door-back" id="NavCharacter">
+                Character
+              </div>
+            </div>
           </li>
           <li onClick={navigateClick}>
-            <div className="door" id="NavDarot">Darot Cards</div>
+            <div className="door">
+              <div className="door-front">
+                <div className="knob"></div>
+              </div>
+              <div className="door-back" id="NavDarot">
+                Darot Cards
+              </div>
+            </div>
           </li>
         </ul>
       </nav>

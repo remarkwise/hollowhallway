@@ -8,6 +8,7 @@
   box-shadow: 0 0 3px #eee;
   color: #eee;
   padding: 6px;
+  width: 100%;
 }
 .CharacterResponse {
   background: #eee;
