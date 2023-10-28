@@ -8,17 +8,18 @@ const Darot = () => {
   // Form
   const [formData, setFormData] = useState({
     GamePlay: 1,
-    HandSize: 2
+    HandSize: 2,
   });
   const valueUpdated = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   // Game Format
   let cardCursor = 0;
+  let resultCursor = 0;
   let GamePlay;
   if (
     GamePlays[formData.GamePlay] !== undefined &&
