@@ -1,0 +1,11 @@
+.welcome {
+  color: #eee;
+  text-align: left;
+}
+.welcome h2,
+.welcome h3,
+.welcome h4 {
+  font-family: "Alice", serif;
+  font-size: 150%;
+  text-align: center;
+}

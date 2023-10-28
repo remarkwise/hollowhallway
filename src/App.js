@@ -2,6 +2,7 @@ import "./css/styles.css";
 import "./css/Nav.css";
 import { useState } from "react";
 // import Quotes from "./components/Quotes";
+import Welcome from "./components/Welcome";
 import Character from "./components/Character";
 import Darot from "./components/Darot";
 
@@ -29,7 +30,7 @@ const App = () => {
   const navigateClick = (e) => {
     // console.log("Open", e.target);
     document.title = appTitle + " | " + e.target.innerText;
-    document.getElementById("mainNav").classList.add("zoom");
+    document.querySelector("#mainNav").classList.add("zoom");
     metaDesc.setAttribute("content", e.target.innerText);
     setFormData({
       ...formData,
@@ -57,7 +58,7 @@ const App = () => {
                 id="NavWelcome"
                 title="Hollow Hallway."
               >
-                Come On In
+                Come On In...
               </div>
               <div className="door-mat"></div>
             </div>
@@ -95,6 +96,7 @@ const App = () => {
   return (
     <div className="App">
       <Nav />
+      {formData.NavWelcome && <Welcome />}
       {formData.NavDarot && <Darot />}
       {formData.NavCharacter && <Character />}
     </div>

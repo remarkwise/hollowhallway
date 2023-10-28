@@ -1,0 +1,53 @@
+import { useState } from "react";
+import "../css/Welcome.css";
+
+function Welcome() {
+  return (
+    <div className="welcome">
+      <h2>Why bother wandering the Hollow Hallway?</h2>
+      <p>Maybe this isn't for you, but see if any of these resonate:</p>
+      <ul>
+        <li>
+          Are you "feeling off" lately and want to recalibrate in your career,
+          vocation, purpose, and or passions?
+        </li>
+        <li>Still "growing up" and unsure what you want to do?</li>
+        <li>
+          Have a sense of "torschlusspanik" where the gates of time are closing
+          and you want to stop falling behind?
+        </li>
+        <li>Is life too serious too often?</li>
+        <li>
+          Need to navigate through some craziness or heal from corporate trauma?
+        </li>
+      </ul>
+      <p>If so, might be worth playing around in the Hollow Hallway</p>
+      <hr />
+      <h3>How do we start?</h3>
+      <p>
+        You can mess around yourself here, but isn't always better to play with
+        a friend?
+      </p>
+      <p>
+        Let's switch it up. Take 15 to 45 minutes and let's play some games that
+        I've spent over a decade of research, prototyping, and practicing.
+      </p>
+      <p>
+        <a href="#">Schedule a faciliatated session</a>
+      </p>
+      <hr />
+      <h4>What's the catch?</h4>
+      <p>
+        Well, noting other than scheduling and honoring your time to be open to
+        something fun exploring philosophical topics that could benefit your
+        life. If you put them into practice, then the great hope is it will
+        proliferate into others lives making the World a better place. Worst
+        case, we get a laugh and you walk away with only 15 minutes gone.
+      </p>
+      <p>
+        <a href="#">Schedule a faciliatated session</a>
+      </p>
+    </div>
+  );
+}
+export default Welcome;
