@@ -16,12 +16,17 @@
 }
 @media screen and (max-width: 640px) {
   nav.nav {
-    zoom: 0.5;
+    zoom: 0.45;
+  }
+}
+@media screen and (max-width: 520px) {
+  nav.nav {
+    zoom: 0.4;
   }
 }
 @media screen and (max-width: 480px) {
   nav.nav {
-    zoom: 0.4;
+    zoom: 0.35;
   }
 }
 @media screen and (max-width: 320px) {
