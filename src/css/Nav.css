@@ -14,6 +14,16 @@
     zoom: 0.65;
   }
 }
+@media screen and (max-width: 800px) {
+  nav.nav {
+    zoom: 0.6;
+  }
+}
+@media screen and (max-width: 700px) {
+  nav.nav {
+    zoom: 0.5;
+  }
+}
 @media screen and (max-width: 640px) {
   nav.nav {
     zoom: 0.45;
