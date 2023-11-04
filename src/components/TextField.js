@@ -3,12 +3,12 @@ const TextField = ({ fieldName, ...props }) => {
   // Playing with destructuring...
   const obj = {
     name: "Fred",
-    location: "New York"
+    location: "New York",
   };
 
   const otherObj = {
     ...obj,
-    SomethingElse: "Another ..."
+    SomethingElse: "Another ...",
   };
 
   const { name } = obj;
@@ -19,10 +19,24 @@ const TextField = ({ fieldName, ...props }) => {
   // add 6
   const list2 = [...list1, 6];
 
+  const Helper = (helper) => {
+    return (
+      <a href={helper.helper} target="_blank">
+        <i className="fa fa-info-circle"></i>
+      </a>
+    );
+  };
+
+  let fieldLabel = fieldName;
+  if (props.label) {
+    fieldLabel = props.label;
+  }
+
   return (
     <fieldset>
-      <label>{fieldName}</label>
+      <label>{fieldLabel}</label>
       <input type="textbox" id={fieldName} name={fieldName} {...props} />
+      {props.helper && <Helper helper={props.helper} />}
     </fieldset>
   );
 };

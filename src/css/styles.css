@@ -12,6 +12,7 @@ html {
   height: 100%;
   background: #090a0f radial-gradient(ellipse at top, #1b2735 0%, #090a0f 90%)
     no-repeat;
+  color: #cdcdcd;
   display: grid;
   place-items: center;
 }
@@ -30,6 +31,7 @@ body {
 }
 h1,
 h2 {
+  color: #eee;
   font-family: "Cinzel", serif;
   font-size: 250%;
   line-height: 1;
@@ -48,6 +50,15 @@ a,
 button {
   cursor: pointer;
 }
+a:link {
+  color: #68a9ea;
+}
+a:visited {
+  color: #dd7575;
+}
+footer {
+  margin-top: 20vh;
+}
 .App {
   max-width: 1280px;
   text-align: center;
@@ -57,4 +68,20 @@ button {
 }
 .tagline {
   color: #aaa;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.2);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+}
+.overlay-modal {
+  margin: auto auto;
+  display: block;
+  overflow: auto;
+  width: 60vh;
+  height: 60vh;
 }

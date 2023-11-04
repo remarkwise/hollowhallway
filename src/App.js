@@ -1,3 +1,4 @@
+/* App */
 import "./css/styles.css";
 import "./css/Nav.css";
 import { useState } from "react";
@@ -17,6 +18,7 @@ const App = () => {
     NavWelcome: false,
     NavCharacter: false,
     NavDarot: false,
+    NavBoards: false,
   });
   const homeValues = formData;
   const valueUpdated = (e) => {
@@ -79,7 +81,7 @@ const App = () => {
                 <div className="knob"></div>
               </div>
               <div
-                className="door-back"
+                className="door-back door-back-trans-1"
                 id="NavCharacter"
                 title="Character Designer leverages AI to identify archetypes, attributes, and references."
               >
@@ -92,13 +94,30 @@ const App = () => {
               <div className="door-front">
                 <div className="knob"></div>
               </div>
-              <div className="door-back" id="NavDarot">
-                Darot Cards
+              <div className="door-back door-back-trans-2" id="NavDarot">
+                Story Cards
+              </div>
+            </div>
+          </li>
+          <li onClick={navigateClick}>
+            <div className="door">
+              <div className="door-front">
+                <div className="knob"></div>
+              </div>
+              <div className="door-back door-back-trans-3" id="NavBoards">
+                Planning Boards
               </div>
             </div>
           </li>
         </ul>
       </nav>
+    );
+  };
+
+  // Footer
+  const Footer = () => {
+    return (
+      <footer>&copy;2023 Hollow Hallway, LLC. All Rights Reserved.</footer>
     );
   };
 
@@ -109,6 +128,8 @@ const App = () => {
       {formData.NavWelcome && <Welcome />}
       {formData.NavDarot && <Darot />}
       {formData.NavCharacter && <Character />}
+      {formData.NavConnect && <Connect />}
+      <Footer />
     </div>
   );
 

@@ -105,7 +105,7 @@ const Darot = () => {
   const DarotBoard = () => {
     return (
       <div className="Darot">
-        <h2>Darot Cards Reading</h2>
+        <h2>Story Cards</h2>
         <p className="tagline">Situation Exploration Role Playing Game</p>
         <div className="board">{Hand}</div>
         <h3 className="results">Your Results</h3>

@@ -143,11 +143,41 @@
   color: #eee;
   font-size: 125%;
   font-weight: bold;
-  padding-top: 30%;
+  padding-top: 70%;
   width: 100%;
   height: 100%;
   overflow: hidden;
   outline: 10px solid #192430;
+}
+
+.door-back.door-back-trans-1 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+.door-back.door-back-trans-2 {
+  background: linear-gradient(-50deg, #e9ef3a, #a06bb9, #165b22, #b4820b);
+  background-size: 500% 500%;
+  animation: gradient 10s ease infinite;
+}
+
+.door-back.door-back-trans-3 {
+  background: linear-gradient(-40deg, #4e060c, #d7d04f, #27052d, #0d0534);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .door-mat {

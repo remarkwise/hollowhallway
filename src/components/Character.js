@@ -1,14 +1,26 @@
 import { useState } from "react";
+import TextField from "../components/TextField";
 import "../css/Character.css";
 require("dotenv").config();
 
+const instructions =
+  "https://www.maisieai.com/help/how-to-get-an-openai-api-key-for-chatgpt";
+
 // OpenAI key
 const API_KEY = process.env.REACT_APP_OPENAI_API_KEY; // secure -> environment variable
+let useAPI = false;
 
 function Character() {
   const [prompt, setPrompt] = useState("");
   const [loading, setLoading] = useState(false);
   const [sentiment, setSentiment] = useState({ __html: "" }); // "Negative" or "Positive"
+  const [AIAPI, setAIAPI] = useState({ key: false });
+  const valueUpdated = (e) => {
+    setAIAPI({
+      ...AIAPI,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   async function callOpenAIAPI() {
     console.log("Call AI");
@@ -35,7 +47,7 @@ function Character() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer " + API_KEY,
+        Authorization: "Bearer " + useAPI,
       },
       body: JSON.stringify(APIBody),
     })
@@ -50,6 +62,26 @@ function Character() {
         setSentiment({ __html: resp }); // Positive or negative
       });
   }
+
+  const KeyPrompt = () => {
+    console.log(AIAPI.key, AIAPI.key.length);
+    if (!AIAPI.key || AIAPI.key.length < 10) {
+      return;
+    } else {
+      useAPI = AIAPI.key;
+      if (AIAPI.key == "deansaysgo") {
+        useAPI = API_KEY;
+      }
+      return (
+        <p className="center">
+          <button className="CharacterDesignerButton" onClick={callOpenAIAPI}>
+            <i class="fa fa-fw fa-lg fa-user-circle"></i>{" "}
+            <b>Design Character</b>
+          </button>
+        </p>
+      );
+    }
+  };
 
   const LoadingPrompt = (load) => {
     if (load) {
@@ -72,15 +104,18 @@ function Character() {
           rows={6}
         />
       </p>
-      <p className="center">
-        <button className="CharacterDesignerButton" onClick={callOpenAIAPI}>
-          Design Character
-        </button>
-      </p>
+      <KeyPrompt />
       <div className="CharacterResponse">
         {LoadingPrompt(loading)}
         <div dangerouslySetInnerHTML={sentiment} />
       </div>
+      <br />
+      <TextField
+        fieldName="key"
+        label="OpenAI API Key"
+        onChange={valueUpdated}
+        helper={instructions}
+      />
     </div>
   );
 }

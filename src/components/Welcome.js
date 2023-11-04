@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../css/Welcome.css";
 
-function Welcome() {
+const Welcome = (props) => {
   return (
     <div className="welcome">
       <h2>Why bother wandering the Hollow Hallway?</h2>
@@ -34,7 +34,9 @@ function Welcome() {
         prototyping, and practicing.
       </p>
       <p>
-        <a href="#">Schedule a faciliatated session</a>
+        <a href="https://forms.gle/hwb2HGzAqtvDq7Va6" target="_blank">
+          Schedule a faciliatated session
+        </a>
       </p>
       <hr />
       <h4>What's the catch?</h4>
@@ -46,9 +48,11 @@ function Welcome() {
         case, we get a laugh and you walk away with only 15 minutes gone.
       </p>
       <p>
-        <a href="#">Schedule a faciliatated session</a>
+        <a href="https://forms.gle/hwb2HGzAqtvDq7Va6" target="_blank">
+          Schedule a faciliatated session
+        </a>
       </p>
     </div>
   );
-}
+};
 export default Welcome;
