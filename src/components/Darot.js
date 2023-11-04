@@ -4,6 +4,8 @@ import Deck from "./Deck";
 import GamePlays from "./GamePlay";
 import PlayCard from "./PlayCard";
 import "../css/Darot.css";
+// https://codepen.io/jsulpis/pen/VwBNoEb
+// https://codepen.io/gayane-gasparyan/pen/wvxewXO
 
 const Darot = () => {
   // Form

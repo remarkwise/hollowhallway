@@ -3,9 +3,11 @@ import "./css/styles.css";
 import "./css/Nav.css";
 import { useState } from "react";
 // import Quotes from "./components/Quotes";
+import Footer from "./components/Footer";
 import Welcome from "./components/Welcome";
 import Character from "./components/Character";
 import Darot from "./components/Darot";
+import Plan from "./components/Plan";
 
 const appTitle = "Hollow Hallway";
 
@@ -114,13 +116,6 @@ const App = () => {
     );
   };
 
-  // Footer
-  const Footer = () => {
-    return (
-      <footer>&copy;2023 Hollow Hallway, LLC. All Rights Reserved.</footer>
-    );
-  };
-
   // UI
   return (
     <div className="App">
@@ -128,7 +123,7 @@ const App = () => {
       {formData.NavWelcome && <Welcome />}
       {formData.NavDarot && <Darot />}
       {formData.NavCharacter && <Character />}
-      {formData.NavConnect && <Connect />}
+      {formData.NavBoards && <Plan />}
       <Footer />
     </div>
   );

@@ -50,6 +50,9 @@ a,
 button {
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+}
 a:link {
   color: #68a9ea;
 }
@@ -57,6 +60,7 @@ a:visited {
   color: #dd7575;
 }
 footer {
+  font-size: 85%;
   margin-top: 20vh;
 }
 .App {
@@ -68,6 +72,13 @@ footer {
 }
 .tagline {
   color: #aaa;
+}
+.plan-board {
+  width: 80vw;
+  text-align: left;
+}
+.plan-board li {
+  padding-bottom: 20px;
 }
 .overlay {
   background: rgba(0, 0, 0, 0.2);
