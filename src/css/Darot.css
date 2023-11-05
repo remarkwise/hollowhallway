@@ -71,8 +71,13 @@
   color: #230101;
 }
 .explanation-quote {
-  display: block;
   clear: both;
+  color: #370707;
+  display: block;
+}
+.quote-content {
+  font-family: "Satisfy", cursive;
+  font-size: 125%;
 }
 @media screen and (min-width: 480px) {
   /*

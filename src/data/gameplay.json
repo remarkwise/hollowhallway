@@ -1,12 +1,8 @@
 {
   "1": [
     {
-      "label": "Now, you present position is",
+      "label": "Your present position is",
       "statement": "Situation"
-    },
-    {
-      "label": "Soon, anticipate",
-      "statement": "Preparation"
     },
     {
       "label": "Before, you were",
@@ -17,12 +13,16 @@
       "statement": "Direction"
     },
     {
+      "label": "Soon, anticipate",
+      "statement": "Preparation"
+    },
+    {
       "label": "Past experiences of",
       "statement": "Acceptance"
     },
     {
       "label": "Chances are strong for",
-      "statement": "Fate"
+      "statement": "Quest"
     }
   ],
   "9": [
