@@ -8,10 +8,16 @@
   nav.nav {
     zoom: 0.85;
   }
+  .nav.zoom {
+    zoom: 0.5;
+  }
 }
 @media screen and (max-width: 960px) {
   nav.nav {
     zoom: 0.65;
+  }
+  .nav.zoom {
+    zoom: 0.4;
   }
 }
 @media screen and (max-width: 800px) {
@@ -43,9 +49,6 @@
   nav.nav {
     zoom: 0.3;
   }
-}
-.nav.zoom {
-  zoom: 0.5;
 }
 .nav.zoom .door-mat {
   display: none;
