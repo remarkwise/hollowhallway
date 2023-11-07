@@ -24,6 +24,15 @@ const Plan = () => {
           harmony your adjacent priorities are, and help identify
           negelected/conflicting areas.
         </li>
+        <li>
+          <a href="https://principlesyou.com/" target="_blank">
+            <b>PrinciplesYou</b>
+          </a>{" "}
+          - A great tool with over a million users to refine the data that helps
+          you: Understand yourself, others, and for helping others understand
+          you. Take this 25-40 minutes survey, and lets walk through it
+          together.
+        </li>
       </ul>
     </div>
   );

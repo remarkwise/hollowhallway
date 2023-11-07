@@ -44,10 +44,16 @@
   nav.nav {
     zoom: 0.35;
   }
+  .nav.zoom {
+    zoom: 0.25;
+  }
 }
 @media screen and (max-width: 320px) {
   nav.nav {
     zoom: 0.3;
+  }
+  .nav.zoom {
+    zoom: 0.25;
   }
 }
 .nav.zoom .door-mat {
