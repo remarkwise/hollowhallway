@@ -3,12 +3,17 @@ import TextField from "../components/TextField";
 import "../css/Character.css";
 require("dotenv").config();
 
+const gpt = "https://chat.openai.com/g/g-rs5aA9uS8-archetype-explorer";
+
 const instructions =
   "https://www.maisieai.com/help/how-to-get-an-openai-api-key-for-chatgpt";
 
 // OpenAI key
 const API_KEY = process.env.REACT_APP_OPENAI_API_KEY; // secure -> environment variable
 let useAPI = false;
+let OpenAIModel = "gpt-3.5-turbo";
+OpenAIModel = "gpt-4";
+// OpenAIModel = "gpt-4";
 
 function Character() {
   const [prompt, setPrompt] = useState("");
@@ -28,7 +33,7 @@ function Character() {
     setLoading(true);
 
     const APIBody = {
-      model: "gpt-3.5-turbo-0613",
+      model: OpenAIModel,
       messages: [
         {
           role: "system",
@@ -64,7 +69,7 @@ function Character() {
   }
 
   const KeyPrompt = () => {
-    console.log(AIAPI.key, AIAPI.key.length);
+    // console.log(AIAPI.key, AIAPI.key.length);
     if (!AIAPI.key || AIAPI.key.length < 10) {
       return;
     } else {
@@ -93,7 +98,7 @@ function Character() {
 
   return (
     <div className="Character">
-      <h2 className="center">Character Designer</h2>
+      <h2 className="center">Archetype Explorer</h2>
       <p className="tagline">Open the door to your main character</p>
       <p>
         <textarea
@@ -116,6 +121,15 @@ function Character() {
         onChange={valueUpdated}
         helper={instructions}
       />
+      <hr />
+      <h4>Beta GPT</h4>
+      <p>Have ChatGPT Plus? Want to try the newest GPT?</p>
+      <p>
+        Of course you do try{" "}
+        <a href="{gpt}" target="_blank">
+          Archetype Explorer+
+        </a>
+      </p>
     </div>
   );
 }

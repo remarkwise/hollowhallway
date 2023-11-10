@@ -85,9 +85,9 @@ const App = () => {
               <div
                 className="door-back door-back-trans-1"
                 id="NavCharacter"
-                title="Character Designer leverages AI to identify archetypes, attributes, and references."
+                title="Archetype Explorer leverages AI to design characters, attributes, and references."
               >
-                Character Designer
+                Archetype Explorer
               </div>
             </div>
           </li>
