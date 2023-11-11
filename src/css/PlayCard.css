@@ -17,9 +17,16 @@
   flex: 1;
   margin: 1%;
   padding: 1%;
-  width: 20vw;
-  height: 20vw;
+  width: 23vw;
+  height: 23vw;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+@media screen and (max-width: 480px) {
+  .play-card {
+    width: 46vw;
+    height: 46vw;
+  }
 }
 
 /* This container is needed to position the front and back side */
