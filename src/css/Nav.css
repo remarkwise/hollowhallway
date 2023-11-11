@@ -64,6 +64,18 @@
   font-family: "Alice", serif;
   font-size: 300%;
 }
+.nav.zoom .homeLogo {
+  display: none;
+}
+.nav.zoom:before {
+  color: #ccc;
+  content: "HH";
+  display: inline-block;
+  font-family: "Alice", serif;
+  font-size: 400%;
+  text-align: center;
+  width: 100%;
+}
 .nav-items {
   list-style: none;
   display: flex;
