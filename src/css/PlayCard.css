@@ -17,8 +17,8 @@
   flex: 1;
   margin: 1%;
   padding: 1%;
-  width: 29%;
-  height: 250px;
+  width: 20vw;
+  height: 20vw;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 

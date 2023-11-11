@@ -3,7 +3,8 @@ import TextField from "../components/TextField";
 import "../css/Character.css";
 require("dotenv").config();
 
-const gpt = "https://chat.openai.com/g/g-rs5aA9uS8-archetype-explorer";
+const archetypeExplorerGPT =
+  "https://chat.openai.com/g/g-rs5aA9uS8-archetype-explorer";
 
 const instructions =
   "https://www.maisieai.com/help/how-to-get-an-openai-api-key-for-chatgpt";
@@ -126,7 +127,7 @@ function Character() {
       <p>Have ChatGPT Plus? Want to try the newest GPT?</p>
       <p>
         Of course you do try{" "}
-        <a href="{gpt}" target="_blank">
+        <a href={archetypeExplorerGPT} target="_blank">
           Archetype Explorer+
         </a>
       </p>
