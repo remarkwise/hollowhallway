@@ -24,8 +24,8 @@
 
 @media screen and (max-width: 480px) {
   .play-card {
-    width: 44vw;
-    height: 44vw;
+    width: 40vw;
+    height: 40vw;
   }
 }
 
