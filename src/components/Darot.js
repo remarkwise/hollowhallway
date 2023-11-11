@@ -12,6 +12,7 @@ const Darot = () => {
   const [formData, setFormData] = useState({
     GamePlay: 1,
     HandSize: 2,
+    Results: false,
   });
   const valueUpdated = (e) => {
     setFormData({
@@ -37,7 +38,7 @@ const Darot = () => {
   // Card Question
   const CardQuestion = (question) => {
     return (
-      <div class="explanation-question">
+      <div className="explanation-question">
         <br />
         <i className="question">{question}</i>
       </div>
@@ -50,8 +51,8 @@ const Darot = () => {
       <div className="explanation-quote">
         <br />
         <div className="quote-content">
-          <i class="fa fa-quote-left fa-2x fa-pull-left"></i>
-          <i class="fa fa-quote-right fa-2x fa-pull-right"></i>
+          <i className="fa fa-quote-left fa-2x fa-pull-left"></i>
+          <i className="fa fa-quote-right fa-2x fa-pull-right"></i>
           {quote}
         </div>
         <br />- <i>{quoteSource}</i>
@@ -79,6 +80,9 @@ const Darot = () => {
     }
     return (
       <li className="explanation" key={id}>
+        <a href={card.img} target="_blank">
+          <img src={card.img} />
+        </a>
         <b className="text-lg">{title}</b> - {card.meaning}
         <br />
         <span className="subtle">
@@ -103,6 +107,36 @@ const Darot = () => {
     return <PlayCard cardType={cardType} key={id} obj={card} />;
   });
 
+  const ResultsButton = () => {
+    return (
+      <p className="resultsButton">
+        <button name="Results" value="1" onClick={valueUpdated}>
+          <i className="fa fa-fw fa-eye"></i> Show Results
+        </button>
+      </p>
+    );
+  };
+
+  const Results = () => {
+    return (
+      <div className="resultsContainer">
+        {" "}
+        <h3 className="results">Your Results</h3>
+        <div className="expectations">
+          <ul>
+            {Explanations}
+            <li className="text-center">
+              Thank you for playing in the Hollow Hallway
+            </li>
+          </ul>
+        </div>
+        <form className="controls">
+          <TextField fieldName="GamePlay" onChange={valueUpdated} />
+        </form>
+      </div>
+    );
+  };
+
   // Card Question
   const DarotBoard = () => {
     return (
@@ -110,13 +144,8 @@ const Darot = () => {
         <h2>Story Cards</h2>
         <p className="tagline">Situation Exploration Role Playing Game</p>
         <div className="board">{Hand}</div>
-        <h3 className="results">Your Results</h3>
-        <div className="expectations">
-          <ul>{Explanations}</ul>
-        </div>
-        <form className="controls">
-          <TextField fieldName="GamePlay" onChange={valueUpdated} />
-        </form>
+        <ResultsButton />
+        {formData.Results && <Results />}
       </div>
     );
   };

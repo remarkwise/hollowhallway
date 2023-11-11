@@ -37,7 +37,10 @@
   inherits: true;
   initial-value: 0turn;
 }
-
+.resultsButton button {
+  border-radius: 6px;
+  padding: 8px 12px;
+}
 .results {
   font-size: 200%;
   text-shadow:
@@ -52,8 +55,24 @@
   padding: 10px 0;
   text-align: left;
 }
+.expectations img {
+  border: 1px solid #112;
+  border-radius: 3px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+  clear: left;
+  display: inline-block;
+  float: left;
+  margin-bottom: 1%;
+  margin-right: 1vw;
+  max-width: 20vw;
+  max-height: 25vh;
+  width: auto;
+  height: auto;
+}
 .expectations li {
   border-top: 1px solid #000;
+  clear: both;
+  display: block;
   list-style: none;
   margin: 1% 0;
   padding-bottom: 0;
@@ -63,6 +82,9 @@
 .expectations li:first-child {
   border-top: 0px solid #000;
 }
+.expectations li.text-center {
+  text-align: center;
+}
 .expectations .subtle {
   display: block;
   padding-top: 10px;
@@ -71,21 +93,17 @@
   color: #230101;
 }
 .explanation-quote {
-  clear: both;
   color: #370707;
-  display: block;
+  display: inline-block;
 }
 .quote-content {
   font-family: "Satisfy", cursive;
   font-size: 125%;
 }
-@media screen and (min-width: 480px) {
-  /*
+@media print {
+  .nav,
   .board,
-  .expectations {
-    display: inline-block;
-    margin: 1%;
-    width: 47%;
+  .controls {
+    display: none;
   }
-  */
 }
