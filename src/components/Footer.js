@@ -10,8 +10,8 @@ const Footer = () => {
         <i className="fa fa-fw fa-calendar"></i> Connect
       </a>
       &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="#" target="_blank">
-        <i className="fa fa-fw fa-paypal"></i> Donate
+      <a href="https://venmo.com/u/remarkwise" target="_blank">
+        <i className="fa fa-fw fa-money"></i> Donate
       </a>
     </footer>
   );

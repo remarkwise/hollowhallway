@@ -12,11 +12,13 @@ html {
   height: 100%;
   background: #090a0f radial-gradient(ellipse at top, #1b2735 0%, #090a0f 90%)
     no-repeat;
+  /* background: url("https://i.imgur.com/BKruPI8.png") 50% 50% no-repeat; */
   color: #cdcdcd;
   display: grid;
   place-items: center;
 }
 body {
+  background-blend-mode: overlay;
   margin: 0; /* Remove HTML default spacing */
   padding: calc(2 * var(--pad));
   font-size: calc(0.625vmin + 0.75rem); /* Responsive font */
