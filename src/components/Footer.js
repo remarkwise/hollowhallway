@@ -6,7 +6,7 @@ const Footer = () => {
         <i className="fa fa-fw fa-github"></i> Code
       </a>
       &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="https://forms.gle/z9jaX8kHicNFYqB26" target="_blank">
+      <a href="https://zcal.co/hollowhallway" target="_blank">
         <i className="fa fa-fw fa-calendar"></i> Connect
       </a>
       &nbsp;&nbsp;|&nbsp;&nbsp;
