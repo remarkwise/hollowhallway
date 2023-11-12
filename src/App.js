@@ -49,7 +49,7 @@ const App = () => {
       NavDarot: false,
       [e.target.id]: true,
     });
-    console.log("FormData", formData);
+    // console.log("FormData", formData);
   };
 
   // Logo

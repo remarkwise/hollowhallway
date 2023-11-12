@@ -14,8 +14,7 @@ const API_KEY = process.env.REACT_APP_OPENAI_API_KEY; // secure -> environment v
 let useAPI = false;
 let OpenAIModel = "gpt-3.5-turbo";
 let unlockKey = "deansaysgo";
-let defaultKey = "";
-defaultKey = unlockKey;
+let defaultKey = unlockKey;
 OpenAIModel = "gpt-4";
 // OpenAIModel = "gpt-4";
 
@@ -32,8 +31,12 @@ function Character() {
   };
 
   async function callOpenAIAPI() {
+    if (AIAPI.key == unlockKey) {
+      useAPI = API_KEY;
+    }
     console.log("Call AI");
     console.log(prompt);
+    console.log(useAPI, API_KEY);
     setLoading(true);
 
     const APIBody = {
@@ -77,14 +80,10 @@ function Character() {
     if (!AIAPI.key || AIAPI.key.length < 10) {
       return;
     } else {
-      useAPI = AIAPI.key;
-      if (AIAPI.key == unlockKey) {
-        useAPI = API_KEY;
-      }
       return (
         <p className="center">
           <button className="CharacterDesignerButton" onClick={callOpenAIAPI}>
-            <i class="fa fa-fw fa-lg fa-user-circle"></i>{" "}
+            <i className="fa fa-fw fa-lg fa-user-circle"></i>{" "}
             <b>Design Character</b>
           </button>
         </p>
