@@ -82,7 +82,11 @@
   display: flex;
   text-align: center;
   width: auto;
-  margin: 0 1%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 .nav-items > li {
   cursor: pointer;
