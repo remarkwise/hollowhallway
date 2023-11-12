@@ -4,6 +4,12 @@ import "../css/Welcome.css";
 const Welcome = (props) => {
   return (
     <div className="welcome">
+      <h1>Unlock from within.</h1>
+      <p className="tagline">Some doors open from the other side.</p>
+      <p>
+        Our goal is to find your key and get you pathed where you want to be.
+      </p>
+      <hr />
       <h2>Why bother wandering the Hollow Hallway?</h2>
       <p>Maybe this isn't for you, but see if any of these resonate:</p>
       <ul>

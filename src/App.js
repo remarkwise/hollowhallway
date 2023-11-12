@@ -52,6 +52,24 @@ const App = () => {
     console.log("FormData", formData);
   };
 
+  // Logo
+  const Logo = () => {
+    let logoClassName = "logo";
+    let taglineClassName = "tagline";
+    if (!formData.NavHome) {
+      logoClassName += " print";
+    }
+    if (!formData.NavHome) {
+      taglineClassName += " print";
+    }
+    return (
+      <div className="lockup">
+        <div className={logoClassName}>Hollow Hallway</div>
+        <div className={taglineClassName}>Unlock from within.</div>
+      </div>
+    );
+  };
+
   // Nav
   const Nav = () => {
     let navClassName = "nav";
@@ -60,7 +78,7 @@ const App = () => {
     }
     return (
       <nav className={navClassName} id="mainNav">
-        <div className="homeLogo">Hollow Hallway</div>
+        <div className="homeLogo"></div>
         <ul className="nav-items">
           <li onClick={navigateClick}>
             <div className="door">
@@ -117,8 +135,14 @@ const App = () => {
   };
 
   // UI
+  let homeClassName = "";
+  if (formData.NavHome) {
+    homeClassName += "home";
+  }
+
   return (
     <div className="App">
+      <Logo />
       <Nav />
       {formData.NavWelcome && <Welcome />}
       {formData.NavDarot && <Darot />}

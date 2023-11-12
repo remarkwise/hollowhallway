@@ -56,6 +56,7 @@
     zoom: 0.25;
   }
 }
+
 .nav.zoom .door-mat {
   display: none;
 }
@@ -72,7 +73,7 @@
   content: "HH";
   display: inline-block;
   font-family: "Alice", serif;
-  font-size: 400%;
+  font-size: 600%;
   text-align: center;
   width: 100%;
 }
@@ -246,4 +247,10 @@
   top: 20px;
   outline: 5px solid #242427;
   transform: rotateX(45deg);
+}
+
+@media print {
+  .nav {
+    display: none;
+  }
 }

@@ -7,5 +7,10 @@
   color: #eee;
   font-family: "Cinzel", serif;
   font-size: 150%;
-  text-align: center;
+}
+.welcome .tagline {
+  font-size: 200%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
 }
