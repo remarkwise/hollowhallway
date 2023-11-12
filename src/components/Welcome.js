@@ -47,7 +47,7 @@ const Welcome = (props) => {
       <hr />
       <h4>What's the catch?</h4>
       <p>
-        Well, noting other than scheduling and honoring your time to be open to
+        Well, nothing other than scheduling and honoring your time to be open to
         something fun exploring philosophical topics that could benefit your
         life. If you put them into practice, then the great hope is it will
         proliferate into others lives making the World a better place. Worst
