@@ -36,7 +36,6 @@ function Character() {
     }
     console.log("Call AI");
     console.log(prompt);
-    console.log(useAPI, API_KEY);
     setLoading(true);
 
     const APIBody = {
