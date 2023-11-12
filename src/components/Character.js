@@ -13,6 +13,9 @@ const instructions =
 const API_KEY = process.env.REACT_APP_OPENAI_API_KEY; // secure -> environment variable
 let useAPI = false;
 let OpenAIModel = "gpt-3.5-turbo";
+let unlockKey = "deansaysgo";
+let defaultKey = "";
+defaultKey = unlockKey;
 OpenAIModel = "gpt-4";
 // OpenAIModel = "gpt-4";
 
@@ -20,7 +23,7 @@ function Character() {
   const [prompt, setPrompt] = useState("");
   const [loading, setLoading] = useState(false);
   const [sentiment, setSentiment] = useState({ __html: "" }); // "Negative" or "Positive"
-  const [AIAPI, setAIAPI] = useState({ key: false });
+  const [AIAPI, setAIAPI] = useState({ key: defaultKey });
   const valueUpdated = (e) => {
     setAIAPI({
       ...AIAPI,
@@ -75,7 +78,7 @@ function Character() {
       return;
     } else {
       useAPI = AIAPI.key;
-      if (AIAPI.key == "deansaysgo") {
+      if (AIAPI.key == unlockKey) {
         useAPI = API_KEY;
       }
       return (
@@ -100,7 +103,7 @@ function Character() {
   return (
     <div className="Character">
       <h2 className="center">Archetype Explorer</h2>
-      <p className="tagline">Open the door to your main character</p>
+      <p className="tagline center">Open the door to your main character</p>
       <p>
         <textarea
           className="CharacterDesignerPrompt"
@@ -115,13 +118,6 @@ function Character() {
         {LoadingPrompt(loading)}
         <div dangerouslySetInnerHTML={sentiment} />
       </div>
-      <br />
-      <TextField
-        fieldName="key"
-        label="OpenAI API Key"
-        onChange={valueUpdated}
-        helper={instructions}
-      />
       <hr />
       <h4>Beta GPT</h4>
       <p>Have ChatGPT Plus? Want to try the newest GPT?</p>
@@ -131,6 +127,13 @@ function Character() {
           Archetype Explorer+
         </a>
       </p>
+      <hr />
+      <TextField
+        fieldName="key"
+        label="OpenAI API Key"
+        onChange={valueUpdated}
+        helper={instructions}
+      />
     </div>
   );
 }
