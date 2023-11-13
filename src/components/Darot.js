@@ -12,8 +12,15 @@ const Darot = () => {
   const [formData, setFormData] = useState({
     GamePlay: 1,
     HandSize: 2,
+    Instructions: true,
     Results: false,
   });
+  const closeInstructions = () => {
+    setFormData({
+      ...formData,
+      Instructions: false,
+    });
+  };
   const valueUpdated = (e) => {
     setFormData({
       ...formData,
@@ -34,6 +41,41 @@ const Darot = () => {
     cardCursor = 0;
     GamePlay = GamePlays[formData.GamePlay];
   }
+
+  // Instructions
+  const Instructions = () => {
+    let instructionsClass = "instructions";
+    if (!formData.Instructions) {
+      instructionsClass += " hide";
+    }
+    return (
+      <div className={instructionsClass}>
+        <button className="close-instructions" onClick={closeInstructions}>
+          <i className="fa fa-close fa-lg"></i>
+        </button>
+        <h3 className="center">Instructions</h3>
+        <ol>
+          <li>
+            <b>Observe the Theme</b>: contemplate the keyphrase on the back of
+            the card
+          </li>
+          <li>
+            <b>Flip a Card</b>: Let the name and imagery guide an underlying
+            message for your story.
+          </li>
+          <li>
+            <b>Weaving Your World</b>: Continue incorporating elements. Who are
+            the characters, the environment, and the events you interact with
+            from this card?
+          </li>
+          <li>
+            <b>Go Deeper</b>: After flipping all the cards, click on{" "}
+            <u>Show More Inspiration</u>
+          </li>
+        </ol>
+      </div>
+    );
+  };
 
   // Card Question
   const CardQuestion = (question) => {
@@ -111,7 +153,7 @@ const Darot = () => {
     return (
       <p className="resultsButton">
         <button name="Results" value="1" onClick={valueUpdated}>
-          <i className="fa fa-fw fa-eye"></i> Show Results
+          <i className="fa fa-fw fa-eye"></i> Show More Inspiration
         </button>
       </p>
     );
@@ -143,6 +185,7 @@ const Darot = () => {
       <div className="Darot">
         <h2>Story Cards</h2>
         <p className="tagline">Situation Exploration Role Playing Game</p>
+        {formData.Instructions && <Instructions />}
         <div className="board">{Hand}</div>
         <ResultsButton />
         {formData.Results && <Results />}
