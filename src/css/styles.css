@@ -108,6 +108,10 @@ footer {
   width: 60vh;
   height: 60vh;
 }
+.version {
+  font-size: 50%;
+  color: rgba(220, 220, 220, 0.5);
+}
 .hide,
 .print {
   display: none;

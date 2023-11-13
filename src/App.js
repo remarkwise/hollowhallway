@@ -10,6 +10,7 @@ import Darot from "./components/Darot";
 import Plan from "./components/Plan";
 
 const appTitle = "Hollow Hallway";
+const versionNumber = "0.5.6";
 
 const App = () => {
   // Form
@@ -47,6 +48,7 @@ const App = () => {
       NavWelcome: false,
       NavCharacter: false,
       NavDarot: false,
+      NavBoards: false,
       [e.target.id]: true,
     });
     // console.log("FormData", formData);
@@ -149,6 +151,7 @@ const App = () => {
       {formData.NavCharacter && <Character />}
       {formData.NavBoards && <Plan />}
       <Footer />
+      <p className="version">Version {versionNumber}</p>
     </div>
   );
 
