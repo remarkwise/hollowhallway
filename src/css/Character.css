@@ -19,6 +19,10 @@
     rgba(202, 205, 219, 1) 100%
   );
   border-radius: 6px;
+  color: #333;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1%;
 }
 .CharacterDesignerButton {
   background-color: rgba(0, 0, 0, 0.5);
