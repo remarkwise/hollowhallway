@@ -10,7 +10,7 @@ import Darot from "./components/Darot";
 import Plan from "./components/Plan";
 
 const appTitle = "Hollow Hallway";
-const versionNumber = "0.5.7";
+const versionNumber = "0.5.8";
 
 const App = () => {
   // Form
