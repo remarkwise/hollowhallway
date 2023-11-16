@@ -65,6 +65,7 @@
   font-family: "Alice", serif;
   font-size: 300%;
 }
+/*
 .nav.zoom .homeLogo {
   display: none;
 }
@@ -77,6 +78,7 @@
   text-align: center;
   width: 100%;
 }
+*/
 .nav-items {
   list-style: none;
   display: flex;
