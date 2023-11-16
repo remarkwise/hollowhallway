@@ -31,12 +31,12 @@ const Welcome = (props) => {
       <hr />
       <h3>How do we start?</h3>
       <p>
-        You can mess around yourself here, but isn't always better to play with
-        a friend?
+        You can mess around yourself here, but isn't it always better to play
+        with a friend?
       </p>
       <p>
         Let's switch it up together and have fun. Take 15 to 45 minutes and
-        let's play some games that I've spent over a decade of research,
+        let's play some games that I've spent over a decade researching,
         prototyping, and practicing.
       </p>
       <p>
