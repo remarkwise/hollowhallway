@@ -74,13 +74,20 @@ const App = () => {
 
   // Nav
   const Nav = () => {
+    let logoClassName = "homeLogo";
     let navClassName = "nav";
     if (!formData.NavHome) {
       navClassName += " zoom";
+    } else {
+      logoClassName += " print";
     }
     return (
       <nav className={navClassName} id="mainNav">
-        <div className="homeLogo"></div>
+        <div className={logoClassName}>
+          Hollow
+          <br />
+          Hallway
+        </div>
         <ul className="nav-items">
           <li onClick={navigateClick}>
             <div className="door">
