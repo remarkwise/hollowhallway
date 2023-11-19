@@ -231,7 +231,6 @@ const StoryCards = () => {
         {formData.Results && <Results />}
         {formData.Prompt && (
           <Suspense fallback={<Loading />}>
-            <h2>A Story...</h2>
             <OpenAI prompt={formData.AiPrompt} type="storycards" />
           </Suspense>
         )}

@@ -3,7 +3,7 @@ const API_KEY = process.env.REACT_APP_OPENAI_API_KEY; // secure -> environment v
 let OpenAIModel = "gpt-4";
 OpenAIModel = "gpt-4-1106-preview"; // Turbo
 
-function OpenAI(props) {
+async function OpenAI(props) {
   console.log("Initiate OpenAI", props);
   let prompt = props.prompt;
   let type = props.type;
@@ -46,7 +46,7 @@ function OpenAI(props) {
     presence_penalty: 0.0,
   };
 
-  fetch("https://api.openai.com/v1/chat/completions", {
+  await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
