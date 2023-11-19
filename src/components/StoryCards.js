@@ -2,18 +2,20 @@ import { useState } from "react";
 import TextField from "./TextField";
 import Deck from "./Deck";
 import GamePlays from "./GamePlay";
+import OpenAI from "./OpenAI";
 import PlayCard from "./PlayCard";
 import "../css/Darot.css";
 // https://codepen.io/jsulpis/pen/VwBNoEb
 // https://codepen.io/gayane-gasparyan/pen/wvxewXO
 
-const Darot = () => {
+const StoryCards = () => {
   // Form
   const [formData, setFormData] = useState({
     GamePlay: 1,
     HandSize: 2,
     Instructions: true,
     Results: false,
+    Prompt: false,
   });
   const closeInstructions = () => {
     setFormData({
@@ -22,7 +24,6 @@ const Darot = () => {
     });
   };
   const valueUpdated = (e) => {
-    console.log(e.target.name, e.target.value);
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -31,6 +32,7 @@ const Darot = () => {
 
   // Game Format
   let cardCursor = 0;
+  let aiPrompt = "";
   let resultCursor = 0;
   let GamePlay;
   if (
@@ -71,7 +73,7 @@ const Darot = () => {
           </li>
           <li>
             <b>Go Deeper</b>: After flipping all the cards, click on{" "}
-            <u>Get Inspiration</u>
+            <u>Show More Inspiration</u>
           </li>
         </ol>
       </div>
@@ -121,6 +123,9 @@ const Darot = () => {
     if (card.quote !== "") {
       quote = CardQuoteContent(card.quote, card.quoteSource);
     }
+    // AI Prompt
+    aiPrompt += title + " " + card.meaning + " ";
+
     return (
       <li className="explanation" key={id}>
         <a href={card.img} target="_blank">
@@ -150,11 +155,20 @@ const Darot = () => {
     return <PlayCard cardType={cardType} key={id} obj={card} />;
   });
 
+  const aiWrite = (e) => {
+    console.log(e.target.name, e.target.value);
+  };
+
   const ResultsButton = () => {
     return (
       <p className="resultsButton">
         <button name="Results" value="1" onClick={valueUpdated}>
-          <i className="fa fa-fw fa-eye"></i> Get Inspiration
+          <i className="fa fa-fw fa-eye"></i> Show More Inspiration
+        </button>
+        <br />
+        <textarea name="aiPrompt" id="aiPrompt" value={aiPrompt} />
+        <button name="Results" value="1" onClick={aiWrite}>
+          <i className="fa fa-fw fa-eye"></i> Show More Inspiration
         </button>
       </p>
     );
@@ -180,24 +194,24 @@ const Darot = () => {
     );
   };
 
-  const Prompt = () => {};
-
   // Card Question
-  const DarotBoard = () => {
+  const StoryBoard = () => {
     return (
       <div className="Darot">
         <h2>Story Cards</h2>
         <p className="tagline">Situation Exploration Role Playing Game</p>
         {formData.Instructions && <Instructions />}
         <div className="board">{Hand}</div>
+        <TextField fieldName="prompt" onChange={valueUpdated} />
         <ResultsButton />
         {formData.Results && <Results />}
+        {formData.Prompt && <OpenAI prompt={formData.Prompt} />}
       </div>
     );
   };
 
   // UI
-  return <DarotBoard />;
+  return <StoryBoard />;
 };
 
-export default Darot;
+export default StoryCards;
