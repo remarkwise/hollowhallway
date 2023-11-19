@@ -20,6 +20,8 @@ function OpenAI(props) {
     case "storycards":
       systemContent =
         "You are a creative storyteller that uses metaphors to explain contemporary challenges. Use the provided elements to create a story. Provide response structured as HTML code.";
+      systemContent =
+        "You are a creative storyteller that uses metaphors to explain contemporary challenges. Use the provided elements to create a story. ";
       break;
     default:
       console.log("No Type", type);
