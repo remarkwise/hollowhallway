@@ -135,7 +135,7 @@ const App = () => {
                 <div className="knob"></div>
               </div>
               <div className="door-back door-back-trans-3" id="NavBoards">
-                Planning Boards
+                Planning Boards &amp; Tools
               </div>
             </div>
           </li>

@@ -24,6 +24,9 @@ const Plan = () => {
           harmony your adjacent priorities are, and help identify
           negelected/conflicting areas.
         </li>
+      </ul>
+      <h3 className="center">Tools</h3>
+      <ul>
         <li>
           <a href="https://principlesyou.com/" target="_blank">
             <b>PrinciplesYou</b>
