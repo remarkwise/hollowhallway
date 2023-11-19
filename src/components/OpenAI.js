@@ -50,26 +50,15 @@ const OpenAI = (props) => {
     presence_penalty: 0.0,
   };
 
-  fetch("https://api.openai.com/v1/chat/completions", {
+  return fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       Authorization: "Bearer " + API_KEY,
     },
     body: JSON.stringify(APIBody),
-  })
-    .then((data) => {
-      return data.json();
-    })
-    .then((data) => {
-      calledOnce = true;
-      console.log("Response", data);
-      if (data.error) {
-        console.log("Error", data.error.message);
-        return data.error.message;
-      }
-      console.log("Content", data["choices"][0]["message"]["content"]);
-      return data["choices"][0]["message"]["content"];
-    });
+  }).then((data) => {
+    return data.json();
+  });
 };
 export default OpenAI;

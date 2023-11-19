@@ -16,7 +16,8 @@ const StoryCards = () => {
     Instructions: true,
     Results: false,
     Ai: false,
-    AiResponse: { __html: "" },
+    AiResponseHtml: { __html: "" },
+    AiResponse: "",
     AiPrompt: "",
     CardPrompt: "",
     UserPrompt: "",
@@ -178,10 +179,29 @@ const StoryCards = () => {
       prompt: formData.CardPrompt + formData.UserPrompt,
       type: "storycards",
     };
-    setFormData({
-      ...formData,
-      AiPrompt: formData.CardPrompt + formData.UserPrompt,
-      AiResponse: { __html: "<div>" + await OpenAI(aiProps) + "</div>" },
+    await OpenAI(aiProps).then((data) => {
+      console.log("aiWait", data);
+      if (data.error) {
+        console.log("Error:", data.error.message);
+        setFormData({
+          ...formData,
+          AiPrompt: formData.CardPrompt + formData.UserPrompt,
+          AiResponse: data.error.message,
+          AiResponseHtml: {
+            __html: "<div>ERROR: " + data.error.message + "</div>",
+          },
+        });
+        return;
+      }
+      setFormData({
+        ...formData,
+        Prompt: true,
+        AiPrompt: formData.CardPrompt + formData.UserPrompt,
+        AiResponse: data["choices"][0]["message"]["content"],
+        AiResponseHtml: {
+          __html: "<div>" + data["choices"][0]["message"]["content"] + "</div>",
+        },
+      });
     });
   }
 
@@ -240,6 +260,7 @@ const StoryCards = () => {
 
   // Card Question
   const StoryBoard = () => {
+    // <div dangerouslySetInnerHTML={formData.AiResponse} />
     return (
       <div className="Darot">
         <h2>Story Cards</h2>
@@ -248,9 +269,7 @@ const StoryCards = () => {
         <div className="board">{Hand}</div>
         <ResultsButton />
         {formData.Results && <Results />}
-        {formData.Prompt && (
-          <div dangerouslySetInnerHTML={formData.AiResponse} />
-        )}
+        {formData.Prompt && formData.AiResponse}
       </div>
     );
   };
