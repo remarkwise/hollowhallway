@@ -1,4 +1,5 @@
-.instructions {
+.instructions,
+.aiResponse {
   background: rgb(255, 255, 255);
   background: radial-gradient(
     circle,

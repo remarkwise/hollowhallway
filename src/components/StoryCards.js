@@ -181,14 +181,20 @@ const StoryCards = () => {
     };
     await OpenAI(aiProps).then((data) => {
       console.log("aiWait", data);
+      formData.CardPrompt = "";
       if (data.error) {
         console.log("Error:", data.error.message);
         setFormData({
           ...formData,
-          AiPrompt: formData.CardPrompt + formData.UserPrompt,
-          AiResponse: data.error.message,
+          Prompt: true,
+          AiPrompt: aiProps.prompt,
+          AiResponse:
+            '<div class="aiResponse">' + data.error.message + "</div>",
           AiResponseHtml: {
-            __html: "<div>ERROR: " + data.error.message + "</div>",
+            __html:
+              '<div class="aiResponse"><h2>Error</h2><p>' +
+              data.error.message +
+              "</p></div>",
           },
         });
         return;
@@ -197,12 +203,18 @@ const StoryCards = () => {
         ...formData,
         Prompt: true,
         AiPrompt: formData.CardPrompt + formData.UserPrompt,
-        AiResponse: data["choices"][0]["message"]["content"].replace(
-          /(?:\r\n|\r|\n)/g,
-          "<br />",
-        ),
+        AiResponse:
+          '<div class="aiResponse"><h2>Your Story</h2><p>' +
+          data["choices"][0]["message"]["content"].replace(
+            /(?:\r\n|\r|\n)/g,
+            "<br />",
+          ) +
+          "</p></div>",
         AiResponseHtml: {
-          __html: "<div>" + data["choices"][0]["message"]["content"] + "</div>",
+          __html:
+            '<div class="aiResponse">' +
+            data["choices"][0]["message"]["content"] +
+            "</div>",
         },
       });
     });
@@ -272,7 +284,9 @@ const StoryCards = () => {
         <div className="board">{Hand}</div>
         <ResultsButton />
         {formData.Results && <Results />}
-        {formData.Prompt && formData.AiResponse}
+        {formData.Prompt && (
+          <div dangerouslySetInnerHTML={formData.AiResponseHtml} />
+        )}
       </div>
     );
   };
