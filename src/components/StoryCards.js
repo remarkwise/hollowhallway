@@ -1,10 +1,10 @@
-import { lazy, Suspense, useState } from "react";
+import { useEffect, useState } from "react";
 import TextField from "./TextField";
 import Deck from "./Deck";
 import GamePlays from "./GamePlay";
+import OpenAI from "./OpenAI";
 import PlayCard from "./PlayCard";
 import "../css/Darot.css";
-const OpenAI = lazy(() => import("./OpenAI"));
 // https://codepen.io/jsulpis/pen/VwBNoEb
 // https://codepen.io/gayane-gasparyan/pen/wvxewXO
 
@@ -16,10 +16,25 @@ const StoryCards = () => {
     Instructions: true,
     Results: false,
     Ai: false,
+    AiResponse: { __html: "" },
     AiPrompt: "",
     CardPrompt: "",
     UserPrompt: "",
   });
+  useEffect(() => {
+    let aiProps = {
+      prompt: formData.CardPrompt + formData.UserPrompt,
+      type: "storycards",
+    };
+    if (formData.Ai) {
+      console.log("HERE");
+      setFormData({
+        ...formData,
+        AiResponse: { __html: OpenAI(aiProps) },
+        Prompt: true,
+      });
+    }
+  }, [formData]);
   const closeInstructions = () => {
     setFormData({
       ...formData,
@@ -127,7 +142,7 @@ const StoryCards = () => {
       quote = CardQuoteContent(card.quote, card.quoteSource);
     }
     // AI Prompt
-    formData.CardPrompt += title + " " + card.meaning + ", ";
+    formData.CardPrompt += title + ", " + card.meaning + ", ";
 
     return (
       <li className="explanation" key={id}>
@@ -158,13 +173,17 @@ const StoryCards = () => {
     return <PlayCard cardType={cardType} key={id} obj={card} />;
   });
 
-  const aiWrite = () => {
+  async function aiWrite() {
+    let aiProps = {
+      prompt: formData.CardPrompt + formData.UserPrompt,
+      type: "storycards",
+    };
     setFormData({
       ...formData,
-      Prompt: true,
       AiPrompt: formData.CardPrompt + formData.UserPrompt,
+      AiResponse: { __html: "<div>" + await OpenAI(aiProps) + "</div>" },
     });
-  };
+  }
 
   const ResultsButton = () => {
     return (
@@ -230,9 +249,7 @@ const StoryCards = () => {
         <ResultsButton />
         {formData.Results && <Results />}
         {formData.Prompt && (
-          <Suspense fallback={<Loading />}>
-            <OpenAI prompt={formData.AiPrompt} type="storycards" />
-          </Suspense>
+          <div dangerouslySetInnerHTML={formData.AiResponse} />
         )}
       </div>
     );
