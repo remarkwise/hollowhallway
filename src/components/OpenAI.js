@@ -76,7 +76,13 @@ const OpenAI = (props) => {
       });
   }
   if (OpenAICall(props)) {
-    return <div dangerouslySetInnerHTML={resp} />;
+    return (
+      <div className="aiResponse">
+        <p>Response Pending</p>
+        {resp}
+        <div dangerouslySetInnerHTML={resp} />
+      </div>
+    );
   }
 };
 export default OpenAI;
