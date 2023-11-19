@@ -197,7 +197,10 @@ const StoryCards = () => {
         ...formData,
         Prompt: true,
         AiPrompt: formData.CardPrompt + formData.UserPrompt,
-        AiResponse: data["choices"][0]["message"]["content"],
+        AiResponse: data["choices"][0]["message"]["content"].replace(
+          /(?:\r\n|\r|\n)/g,
+          "<br />",
+        ),
         AiResponseHtml: {
           __html: "<div>" + data["choices"][0]["message"]["content"] + "</div>",
         },
