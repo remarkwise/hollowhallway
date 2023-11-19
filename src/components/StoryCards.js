@@ -94,6 +94,11 @@ const StoryCards = () => {
             <b>Go Deeper</b>: After flipping all the cards, click on{" "}
             <u>Get More Inspiration</u>
           </li>
+          <li>
+            <b>Write Story</b>: After examining more inspiration and providing
+            your own notes and interpreations, click on <u>Write Story</u> to
+            have an AI bot generate your short story.
+          </li>
         </ol>
       </div>
     );
@@ -279,15 +284,17 @@ const StoryCards = () => {
         <p className="tagline">Situation Exploration Role Playing Game</p>
         {formData.Instructions && <Instructions />}
         <div className="board">{Hand}</div>
-        <h3>Your Notes</h3>
-        <textarea
-          className="aiInput"
-          name="UserPrompt"
-          id="UserPrompt"
-          defaultValue={formData.UserPrompt}
-          onBlur={valueUpdated}
-          placeholder="Add your notes..."
-        />
+        <h3>Your Notes &amp; Interpretations</h3>
+        <div className="grow-wrap">
+          <textarea
+            className="aiInput"
+            name="UserPrompt"
+            id="UserPrompt"
+            defaultValue={formData.UserPrompt}
+            onBlur={valueUpdated}
+            placeholder="Add your notes..."
+          />
+        </div>
         <ResultsButton />
         {formData.Results && <Results />}
         {formData.Prompt && (
