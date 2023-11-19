@@ -33,6 +33,18 @@ const Plan = () => {
           you. Take this 25-40 minutes survey, and lets walk through it
           together.
         </li>
+        <li>
+          <a href="/pdf/logical-fallacies-infographic.pdf" target="_blank">
+            <b>Logical Fallacies</b>
+          </a>{" "}
+          - Infographic on Logical fallacies, which are deceptive arguments that
+          appear valid but contain flaws in reasoning. Understanding them is
+          crucial for critical thinking and effective communication. Recognizing
+          fallacies helps one avoid being misled or making flawed arguments. It
+          empowers individuals to think more rationally, make sound judgments,
+          and engage in constructive discussions, promoting better
+          decision-making and a more informed society.
+        </li>
       </ul>
     </div>
   );
