@@ -16,6 +16,7 @@ let OpenAIModel = "gpt-3.5-turbo";
 let unlockKey = "deansaysgo";
 let defaultKey = unlockKey;
 OpenAIModel = "gpt-4";
+OpenAIModel = "gpt-4-1106-preview"; // Turbo
 // OpenAIModel = "gpt-4";
 
 function Character() {
