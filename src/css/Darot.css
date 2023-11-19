@@ -47,7 +47,15 @@
   background-repeat: no-repeat;
   animation: bg-spin 10s linear infinite;
 }
-
+.aiInput {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #666;
+  border-radius: 6px;
+  box-shadow: 0 0 3px #eee;
+  color: #aad0ee;
+  padding: 6px;
+  width: 100%;
+}
 @keyframes bg-spin {
   to {
     --border-angle: 1turn;

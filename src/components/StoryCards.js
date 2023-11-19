@@ -43,7 +43,7 @@ const StoryCards = () => {
     });
   };
   const valueUpdated = (e) => {
-    console.log(e.target.name, e.target.value);
+    // console.log(e.target.name, e.target.value);
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -192,7 +192,7 @@ const StoryCards = () => {
             '<div class="aiResponse">' + data.error.message + "</div>",
           AiResponseHtml: {
             __html:
-              '<div class="aiResponse"><h2>Error</h2><p>' +
+              '<div class="aiResponse"><h3>Error</h3><p>' +
               data.error.message +
               "</p></div>",
           },
@@ -204,7 +204,7 @@ const StoryCards = () => {
         Prompt: true,
         AiPrompt: formData.CardPrompt + formData.UserPrompt,
         AiResponse:
-          '<div class="aiResponse"><h2>Your Story</h2><p>' +
+          '<div class="aiResponse"><h3>Your Story</h3><p>' +
           data["choices"][0]["message"]["content"].replace(
             /(?:\r\n|\r|\n)/g,
             "<br />",
@@ -223,23 +223,20 @@ const StoryCards = () => {
   const ResultsButton = () => {
     return (
       <div className="resultsContainer">
-        <p className="resultsButton">
-          <button name="Results" value="1" onClick={valueUpdated}>
-            <i className="fa fa-fw fa-eye"></i> Get More Inspiration
-          </button>
-        </p>
-        <hr />
-        <p>
-          <textarea
-            name="UserPrompt"
-            id="UserPrompt"
-            defaultValue={formData.UserPrompt}
-            onBlur={valueUpdated}
-          />
-          <button name="Results" value="1" onClick={aiWrite}>
-            <i className="fa fa-fw fa-pencil"></i> Write Story
-          </button>
-        </p>
+        {!formData.Results && (
+          <p className="resultsButton">
+            <button name="Results" value="1" onClick={valueUpdated}>
+              <i className="fa fa-fw fa-eye"></i> Get More Inspiration
+            </button>
+          </p>
+        )}
+        {!formData.Prompt && (
+          <p className="resultsButton">
+            <button name="Results" value="1" onClick={aiWrite}>
+              <i className="fa fa-fw fa-pencil"></i> Write Story
+            </button>
+          </p>
+        )}
       </div>
     );
   };
@@ -282,6 +279,15 @@ const StoryCards = () => {
         <p className="tagline">Situation Exploration Role Playing Game</p>
         {formData.Instructions && <Instructions />}
         <div className="board">{Hand}</div>
+        <h3>Your Notes</h3>
+        <textarea
+          className="aiInput"
+          name="UserPrompt"
+          id="UserPrompt"
+          defaultValue={formData.UserPrompt}
+          onBlur={valueUpdated}
+          placeholder="Add your notes..."
+        />
         <ResultsButton />
         {formData.Results && <Results />}
         {formData.Prompt && (

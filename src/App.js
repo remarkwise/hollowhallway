@@ -6,12 +6,12 @@ import { useState } from "react";
 import Footer from "./components/Footer";
 import Welcome from "./components/Welcome";
 import Character from "./components/Character";
-import Darot from "./components/Darot";
+// import Darot from "./components/Darot";
 import Plan from "./components/Plan";
 import StoryCards from "./components/StoryCards";
 
 const appTitle = "Hollow Hallway";
-const versionNumber = "0.6.8";
+const versionNumber = "0.6.9";
 
 const App = () => {
   // Form
