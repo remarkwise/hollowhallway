@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import TextField from "./TextField";
 import Deck from "./Deck";
 import GamePlays from "./GamePlay";
-import OpenAI from "./OpenAI";
 import PlayCard from "./PlayCard";
 import "../css/Darot.css";
+const OpenAI = lazy(() => import("./OpenAI"));
 // https://codepen.io/jsulpis/pen/VwBNoEb
 // https://codepen.io/gayane-gasparyan/pen/wvxewXO
 
@@ -15,7 +15,10 @@ const StoryCards = () => {
     HandSize: 2,
     Instructions: true,
     Results: false,
-    Prompt: false,
+    Ai: false,
+    AiPrompt: "",
+    CardPrompt: "",
+    UserPrompt: "",
   });
   const closeInstructions = () => {
     setFormData({
@@ -24,6 +27,7 @@ const StoryCards = () => {
     });
   };
   const valueUpdated = (e) => {
+    console.log(e.target.name, e.target.value);
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -32,7 +36,6 @@ const StoryCards = () => {
 
   // Game Format
   let cardCursor = 0;
-  let aiPrompt = "";
   let resultCursor = 0;
   let GamePlay;
   if (
@@ -73,7 +76,7 @@ const StoryCards = () => {
           </li>
           <li>
             <b>Go Deeper</b>: After flipping all the cards, click on{" "}
-            <u>Show More Inspiration</u>
+            <u>Get More Inspiration</u>
           </li>
         </ol>
       </div>
@@ -124,7 +127,7 @@ const StoryCards = () => {
       quote = CardQuoteContent(card.quote, card.quoteSource);
     }
     // AI Prompt
-    aiPrompt += title + " " + card.meaning + " ";
+    formData.CardPrompt += title + " " + card.meaning + ", ";
 
     return (
       <li className="explanation" key={id}>
@@ -155,22 +158,35 @@ const StoryCards = () => {
     return <PlayCard cardType={cardType} key={id} obj={card} />;
   });
 
-  const aiWrite = (e) => {
-    console.log(e.target.name, e.target.value);
+  const aiWrite = () => {
+    setFormData({
+      ...formData,
+      Prompt: true,
+      AiPrompt: formData.CardPrompt + formData.UserPrompt,
+    });
   };
 
   const ResultsButton = () => {
     return (
-      <p className="resultsButton">
-        <button name="Results" value="1" onClick={valueUpdated}>
-          <i className="fa fa-fw fa-eye"></i> Show More Inspiration
-        </button>
-        <br />
-        <textarea name="aiPrompt" id="aiPrompt" value={aiPrompt} />
-        <button name="Results" value="1" onClick={aiWrite}>
-          <i className="fa fa-fw fa-eye"></i> Show More Inspiration
-        </button>
-      </p>
+      <div className="resultsContainer">
+        <p className="resultsButton">
+          <button name="Results" value="1" onClick={valueUpdated}>
+            <i className="fa fa-fw fa-eye"></i> Get More Inspiration
+          </button>
+        </p>
+        <hr />
+        <p>
+          <textarea
+            name="UserPrompt"
+            id="UserPrompt"
+            defaultValue={formData.UserPrompt}
+            onBlur={valueUpdated}
+          />
+          <button name="Results" value="1" onClick={aiWrite}>
+            <i className="fa fa-fw fa-pencil"></i> Write Story
+          </button>
+        </p>
+      </div>
     );
   };
 
@@ -194,6 +210,15 @@ const StoryCards = () => {
     );
   };
 
+  // Loading
+  const Loading = () => {
+    return (
+      <div className="loading">
+        <h2>Loading</h2>
+      </div>
+    );
+  };
+
   // Card Question
   const StoryBoard = () => {
     return (
@@ -202,10 +227,14 @@ const StoryCards = () => {
         <p className="tagline">Situation Exploration Role Playing Game</p>
         {formData.Instructions && <Instructions />}
         <div className="board">{Hand}</div>
-        <TextField fieldName="prompt" onChange={valueUpdated} />
         <ResultsButton />
         {formData.Results && <Results />}
-        {formData.Prompt && <OpenAI prompt={formData.Prompt} />}
+        {formData.Prompt && (
+          <Suspense fallback={<Loading />}>
+            <h2>A Story...</h2>
+            <OpenAI prompt={formData.AiPrompt} type="storycards" />
+          </Suspense>
+        )}
       </div>
     );
   };

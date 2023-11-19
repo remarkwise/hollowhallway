@@ -8,9 +8,10 @@ import Welcome from "./components/Welcome";
 import Character from "./components/Character";
 import Darot from "./components/Darot";
 import Plan from "./components/Plan";
+import StoryCards from "./components/StoryCards";
 
 const appTitle = "Hollow Hallway";
-const versionNumber = "0.5.8";
+const versionNumber = "0.6.0";
 
 const App = () => {
   // Form
@@ -148,13 +149,14 @@ const App = () => {
   if (formData.NavHome) {
     homeClassName += "home";
   }
+  //       {formData.NavDarot && <Darot />}
 
   return (
     <div className="App">
       <Logo />
       <Nav />
       {formData.NavWelcome && <Welcome />}
-      {formData.NavDarot && <Darot />}
+      {formData.NavDarot && <StoryCards />}
       {formData.NavCharacter && <Character />}
       {formData.NavBoards && <Plan />}
       <Footer />
