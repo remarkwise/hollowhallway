@@ -56,7 +56,7 @@ function OpenAI(props) {
       return data.json();
     })
     .then((data) => {
-      // console.log("Response", data);
+      console.log("Response", data);
       let resp = "";
       if (data.error) {
         console.log("Error", data.error.message);
@@ -68,6 +68,7 @@ function OpenAI(props) {
 
       return (
         <div className="openai-response">
+          {resp}
           <div dangerouslySetInnerHTML={{ __html: resp }} />
         </div>
       );
