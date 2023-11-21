@@ -31,7 +31,6 @@ body {
   margin: 0; /* Remove HTML default spacing */
   padding: calc(2 * var(--pad));
   min-width: 100%;
-  min-height: 100%;
   text-align: center;
 }
 h1,
