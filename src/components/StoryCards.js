@@ -3,6 +3,7 @@ import TextField from "./TextField";
 import Deck from "./Deck";
 import GamePlays from "./GamePlay";
 import OpenAI from "./OpenAI";
+import Panel from "./Panel";
 import PlayCard from "./PlayCard";
 import "../css/Darot.css";
 // https://codepen.io/jsulpis/pen/VwBNoEb
@@ -75,10 +76,10 @@ const StoryCards = () => {
         <button className="close-instructions" onClick={closeInstructions}>
           <i className="fa fa-close fa-lg"></i>
         </button>
-        <h3 className="center">Instructions</h3>
+        <h3 className="center">How To Play</h3>
         <ol>
           <li>
-            <b>Observe the Theme</b>: contemplate the keyphrase on the back of
+            <b>Meditation Theme</b>: contemplate the keyphrase on the back of
             the card
           </li>
           <li>
@@ -100,6 +101,32 @@ const StoryCards = () => {
             have an AI bot generate your short story.
           </li>
         </ol>
+        <h3 className="center">Meditation Themes</h3>
+        <p>
+          The order of the cards are a time and mindset perspective. Consider
+          the following orientation as you meditate on the significance of each
+          card:
+        </p>
+        <ul>
+          <li>
+            <b>Situation</b>: Where are you?
+          </li>
+          <li>
+            <b>Reflection</b>: Where have you been?
+          </li>
+          <li>
+            <b>Direction</b>: Where are you headed?
+          </li>
+          <li>
+            <b>Preparation</b>: What can you ready?
+          </li>
+          <li>
+            <b>Acceptance</b>: What can you release?
+          </li>
+          <li>
+            <b>Quest</b>: What is the purpose/challenge?
+          </li>
+        </ul>
       </div>
     );
   };
