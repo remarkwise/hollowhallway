@@ -1,5 +1,4 @@
 .Darot {
-  padding: 30px;
 }
 .instructions,
 .aiResponse {
@@ -19,6 +18,7 @@
 .instructions h3 {
   margin: 0;
 }
+
 .instructions ol {
   font-size: 90%;
 }

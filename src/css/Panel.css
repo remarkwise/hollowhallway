@@ -1,5 +1,5 @@
 .panel {
-  display: block;
+  display: none;
   position: fixed;
   transition: all 1s linear;
   background: rgb(255, 255, 255);

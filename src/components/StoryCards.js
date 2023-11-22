@@ -312,22 +312,26 @@ const StoryCards = () => {
         {formData.Instructions && <Instructions />}
         <div className="board">{Hand}</div>
         <h3>Your Notes &amp; Interpretations</h3>
-        <div className="grow-wrap">
-          <textarea
-            className="aiInput"
-            name="UserPrompt"
-            id="UserPrompt"
-            defaultValue={formData.UserPrompt}
-            onBlur={valueUpdated}
-            placeholder="Add your notes..."
-          />
+        <div className="col-6">
+          <div className="grow-wrap">
+            <textarea
+              className="aiInput"
+              name="UserPrompt"
+              id="UserPrompt"
+              defaultValue={formData.UserPrompt}
+              onBlur={valueUpdated}
+              placeholder="Add your notes..."
+            />
+          </div>
         </div>
-        <ResultsButton />
+        <div className="col-6">
+          <ResultsButton />
+          {formData.Results && <Results />}
+          {formData.Prompt && (
+            <div dangerouslySetInnerHTML={formData.AiResponseHtml} />
+          )}
+        </div>
         <Panel content={<Results />} position="tr" on="" />
-        {formData.Results && <Results />}
-        {formData.Prompt && (
-          <div dangerouslySetInnerHTML={formData.AiResponseHtml} />
-        )}
       </div>
     );
   };
