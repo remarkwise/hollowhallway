@@ -4,6 +4,7 @@ import "./css/Nav.css";
 import { useState } from "react";
 // import Quotes from "./components/Quotes";
 import Footer from "./components/Footer";
+// import Nav from "./components/Nav";
 import Welcome from "./components/Welcome";
 import Character from "./components/Character";
 // import Darot from "./components/Darot";
@@ -23,6 +24,7 @@ const App = () => {
     NavCharacter: false,
     NavDarot: false,
     NavBoards: false,
+    View: false,
   });
   const homeValues = formData;
   const valueUpdated = (e) => {
@@ -38,6 +40,22 @@ const App = () => {
     });
   };
   const metaDesc = document.querySelector('meta[name="description"]');
+  const navigateHome = () => {
+    // console.log("Open", e.target);
+    document.title = appTitle;
+    document.querySelector("#mainNav").classList.remove("zoom");
+    setFormData({
+      ...formData,
+      NavHome: true,
+      NavWelcome: false,
+      NavCharacter: false,
+      NavDarot: false,
+      NavBoards: false,
+      View: false,
+    });
+    // console.log("FormData", formData);
+  };
+
   const navigateClick = (e) => {
     // console.log("Open", e.target);
     document.title = appTitle + " | " + e.target.innerText;
@@ -51,6 +69,7 @@ const App = () => {
       NavDarot: false,
       NavBoards: false,
       [e.target.id]: true,
+      View: e.target.id,
     });
     // console.log("FormData", formData);
   };
@@ -74,7 +93,7 @@ const App = () => {
   };
 
   // Nav
-  const Nav = () => {
+  const NavApp = () => {
     let logoClassName = "homeLogo";
     let navClassName = "nav";
     if (!formData.NavHome) {
@@ -84,22 +103,24 @@ const App = () => {
     }
     return (
       <nav className={navClassName} id="mainNav">
-        <div className={logoClassName}>
+        <div className={logoClassName} onClick={navigateHome}>
           Hollow
           <br />
           Hallway
         </div>
         <ul className="nav-items">
-          <li onClick={navigateClick}>
+          <li>
             <div className="door">
               <div className="door-front">
                 <div className="knob"></div>
               </div>
               <div
+                onClick={navigateClick}
                 className="door-back"
                 id="NavWelcome"
                 title="Hollow Hallway."
               >
+                <div className="navIcon"></div>
                 Come On In...
               </div>
               <div className="door-mat"></div>
@@ -111,6 +132,7 @@ const App = () => {
                 <div className="knob"></div>
               </div>
               <div className="door-back door-back-trans-2" id="NavDarot">
+                <div className="navIcon"></div>
                 Story Cards
               </div>
             </div>
@@ -125,6 +147,7 @@ const App = () => {
                 id="NavCharacter"
                 title="Archetype Explorer leverages AI to design characters, attributes, and references."
               >
+                <div className="navIcon"></div>
                 Archetype Explorer
               </div>
             </div>
@@ -135,6 +158,7 @@ const App = () => {
                 <div className="knob"></div>
               </div>
               <div className="door-back door-back-trans-3" id="NavBoards">
+                <div className="navIcon"></div>
                 Planning Boards &amp; Tools
               </div>
             </div>
@@ -154,13 +178,12 @@ const App = () => {
   return (
     <div className="App">
       <Logo />
-      <Nav />
+      <NavApp />
       {formData.NavWelcome && <Welcome />}
       {formData.NavDarot && <StoryCards />}
       {formData.NavCharacter && <Character />}
       {formData.NavBoards && <Plan />}
-      <Footer />
-      <p className="version">Version {versionNumber}</p>
+      <Footer v={versionNumber} />
     </div>
   );
 

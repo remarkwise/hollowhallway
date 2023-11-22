@@ -323,6 +323,7 @@ const StoryCards = () => {
           />
         </div>
         <ResultsButton />
+        <Panel content={<Results />} position="tr" on="" />
         {formData.Results && <Results />}
         {formData.Prompt && (
           <div dangerouslySetInnerHTML={formData.AiResponseHtml} />
