@@ -4,12 +4,15 @@ import "./css/Nav.css";
 import { useState } from "react";
 // import Quotes from "./components/Quotes";
 import Footer from "./components/Footer";
+// import Nav from "./components/Nav";
 import Welcome from "./components/Welcome";
 import Character from "./components/Character";
-import Darot from "./components/Darot";
+// import Darot from "./components/Darot";
 import Plan from "./components/Plan";
+import StoryCards from "./components/StoryCards";
 
 const appTitle = "Hollow Hallway";
+const versionNumber = "0.6.14";
 
 const App = () => {
   // Form
@@ -21,6 +24,7 @@ const App = () => {
     NavCharacter: false,
     NavDarot: false,
     NavBoards: false,
+    View: false,
   });
   const homeValues = formData;
   const valueUpdated = (e) => {
@@ -36,6 +40,22 @@ const App = () => {
     });
   };
   const metaDesc = document.querySelector('meta[name="description"]');
+  const navigateHome = () => {
+    // console.log("Open", e.target);
+    document.title = appTitle;
+    document.querySelector("#mainNav").classList.remove("zoom");
+    setFormData({
+      ...formData,
+      NavHome: true,
+      NavWelcome: false,
+      NavCharacter: false,
+      NavDarot: false,
+      NavBoards: false,
+      View: false,
+    });
+    // console.log("FormData", formData);
+  };
+
   const navigateClick = (e) => {
     // console.log("Open", e.target);
     document.title = appTitle + " | " + e.target.innerText;
@@ -47,34 +67,74 @@ const App = () => {
       NavWelcome: false,
       NavCharacter: false,
       NavDarot: false,
+      NavBoards: false,
       [e.target.id]: true,
+      View: e.target.id,
     });
-    console.log("FormData", formData);
+    // console.log("FormData", formData);
+  };
+
+  // Logo
+  const Logo = () => {
+    let logoClassName = "logo";
+    let taglineClassName = "tagline";
+    if (!formData.NavHome) {
+      logoClassName += " print";
+    }
+    if (!formData.NavHome) {
+      taglineClassName += " print";
+    }
+    return (
+      <div className="lockup">
+        <div className={logoClassName}>Hollow Hallway</div>
+        <div className={taglineClassName}>Unlock from within.</div>
+      </div>
+    );
   };
 
   // Nav
-  const Nav = () => {
+  const NavApp = () => {
+    let logoClassName = "homeLogo";
     let navClassName = "nav";
     if (!formData.NavHome) {
       navClassName += " zoom";
+    } else {
+      logoClassName += " print";
     }
     return (
       <nav className={navClassName} id="mainNav">
-        <div className="homeLogo">Hollow Hallway</div>
+        <div className={logoClassName} onClick={navigateHome}>
+          Hollow
+          <br />
+          Hallway
+        </div>
         <ul className="nav-items">
-          <li onClick={navigateClick}>
+          <li>
             <div className="door">
               <div className="door-front">
                 <div className="knob"></div>
               </div>
               <div
+                onClick={navigateClick}
                 className="door-back"
                 id="NavWelcome"
                 title="Hollow Hallway."
               >
+                <div className="navIcon"></div>
                 Come On In...
               </div>
               <div className="door-mat"></div>
+            </div>
+          </li>
+          <li onClick={navigateClick}>
+            <div className="door">
+              <div className="door-front">
+                <div className="knob"></div>
+              </div>
+              <div className="door-back door-back-trans-2" id="NavDarot">
+                <div className="navIcon"></div>
+                Story Cards
+              </div>
             </div>
           </li>
           <li onClick={navigateClick}>
@@ -87,6 +147,7 @@ const App = () => {
                 id="NavCharacter"
                 title="Archetype Explorer leverages AI to design characters, attributes, and references."
               >
+                <div className="navIcon"></div>
                 Archetype Explorer
               </div>
             </div>
@@ -96,18 +157,9 @@ const App = () => {
               <div className="door-front">
                 <div className="knob"></div>
               </div>
-              <div className="door-back door-back-trans-2" id="NavDarot">
-                Story Cards
-              </div>
-            </div>
-          </li>
-          <li onClick={navigateClick}>
-            <div className="door">
-              <div className="door-front">
-                <div className="knob"></div>
-              </div>
               <div className="door-back door-back-trans-3" id="NavBoards">
-                Planning Boards
+                <div className="navIcon"></div>
+                Planning Boards &amp; Tools
               </div>
             </div>
           </li>
@@ -117,14 +169,21 @@ const App = () => {
   };
 
   // UI
+  let homeClassName = "";
+  if (formData.NavHome) {
+    homeClassName += "home";
+  }
+  //       {formData.NavDarot && <Darot />}
+
   return (
     <div className="App">
-      <Nav />
+      <Logo />
+      <NavApp />
       {formData.NavWelcome && <Welcome />}
-      {formData.NavDarot && <Darot />}
+      {formData.NavDarot && <StoryCards />}
       {formData.NavCharacter && <Character />}
       {formData.NavBoards && <Plan />}
-      <Footer />
+      <Footer v={versionNumber} />
     </div>
   );
 

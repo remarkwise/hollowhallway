@@ -4,6 +4,12 @@ import "../css/Welcome.css";
 const Welcome = (props) => {
   return (
     <div className="welcome">
+      <h1>Unlock from within.</h1>
+      <p className="tagline">Some doors open from the other side.</p>
+      <p>
+        Our goal is to find your key and get you pathed where you want to be.
+      </p>
+      <hr />
       <h2>Why bother wandering the Hollow Hallway?</h2>
       <p>Maybe this isn't for you, but see if any of these resonate:</p>
       <ul>
@@ -25,12 +31,12 @@ const Welcome = (props) => {
       <hr />
       <h3>How do we start?</h3>
       <p>
-        You can mess around yourself here, but isn't always better to play with
-        a friend?
+        You can mess around yourself here, but isn't it always better to play
+        with a friend?
       </p>
       <p>
         Let's switch it up together and have fun. Take 15 to 45 minutes and
-        let's play some games that I've spent over a decade of research,
+        let's play some games that I've spent over a decade researching,
         prototyping, and practicing.
       </p>
       <p>
@@ -41,7 +47,7 @@ const Welcome = (props) => {
       <hr />
       <h4>What's the catch?</h4>
       <p>
-        Well, noting other than scheduling and honoring your time to be open to
+        Well, nothing other than scheduling and honoring your time to be open to
         something fun exploring philosophical topics that could benefit your
         life. If you put them into practice, then the great hope is it will
         proliferate into others lives making the World a better place. Worst

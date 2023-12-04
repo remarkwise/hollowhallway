@@ -1,3 +1,32 @@
+.Darot {
+}
+.instructions,
+.aiResponse {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(235, 235, 242, 1) 35%,
+    rgba(202, 205, 219, 1) 100%
+  );
+  border-radius: 6px;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 1%;
+  text-align: left;
+}
+.instructions h3 {
+  margin: 0;
+}
+
+.instructions ol {
+  font-size: 90%;
+}
+.close-instructions {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
 .board {
   background: #230101;
   border-radius: 6px;
@@ -20,6 +49,50 @@
   background-position: center center;
   background-repeat: no-repeat;
   animation: bg-spin 10s linear infinite;
+}
+
+.aiInput {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #666;
+  border-radius: 6px;
+  box-shadow: 0 0 3px #eee;
+  color: #aad0ee;
+  padding: 6px;
+  width: 100%;
+  height: auto;
+  resize: vertical;
+  min-height: 15vh;
+}
+.grow-wrap {
+  /* easy way to plop the elements on top of each other and have them both sized based on the tallest one's height */
+  display: grid;
+}
+.grow-wrap::after {
+  /* Note the weird space! Needed to preventy jumpy behavior */
+  content: attr(data-replicated-value) " ";
+
+  /* This is how textarea text behaves */
+  white-space: pre-wrap;
+
+  /* Hidden from view, clicks, and screen readers */
+  visibility: hidden;
+}
+.grow-wrap > textarea {
+  /* You could leave this, but after a user resizes, then it ruins the auto sizing */
+  resize: none;
+
+  /* Firefox shows scrollbar on growth, you can hide like this. */
+  overflow: hidden;
+}
+.grow-wrap > textarea,
+.grow-wrap::after {
+  /* Identical styling required!! */
+  border: 1px solid black;
+  padding: 0.5rem;
+  font: inherit;
+
+  /* Place on top of each other */
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 @keyframes bg-spin {

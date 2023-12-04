@@ -22,10 +22,17 @@
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
+@media screen and (min-width: 1280px) {
+  .play-card {
+    width: 28%;
+    height: 20vw;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .play-card {
-    width: 44vw;
-    height: 44vw;
+    width: 40vw;
+    height: 40vw;
   }
 }
 

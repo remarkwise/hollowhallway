@@ -1,0 +1,53 @@
+.panel {
+  display: none;
+  position: fixed;
+  transition: all 1s linear;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(235, 235, 242, 1) 35%,
+    rgba(202, 205, 219, 1) 100%
+  );
+  color: #333;
+  padding: 1%;
+}
+.panel.tl {
+  border-radius: 0 6px 6px 0;
+  top: 0;
+  left: 0;
+  margin-left: calc(-100% + -100vw);
+}
+.panel.tr {
+  border-radius: 6px 0 0 6px;
+  top: 0;
+  right: 0;
+  margin-right: calc(-100% + -100vw);
+}
+.panel.bl {
+  bottom: 0;
+  left: 0;
+}
+.panel.br {
+  bottom: 0;
+  right: 0;
+}
+.panel.tl.on {
+  margin-left: 0;
+}
+.panel.tr.on {
+  margin-right: 0;
+}
+.panel .close {
+  content: "X";
+  position: absolute;
+  top: 0;
+}
+.panel.tl .close,
+.panel.bl .close {
+  right: 0;
+}
+.panel.tr .close,
+.panel.br .close {
+  left: 0;
+}

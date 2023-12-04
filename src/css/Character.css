@@ -11,7 +11,26 @@
   width: 100%;
 }
 .CharacterResponse {
-  background: #eee;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(235, 235, 242, 1) 35%,
+    rgba(202, 205, 219, 1) 100%
+  );
+  border-radius: 6px;
+  color: #333;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1%;
+}
+.CharacterResponse h2 {
+  color: #aa0000;
+}
+@media screen and (max-width: 480px) {
+  .CharacterResponse {
+    width: 100%;
+  }
 }
 .CharacterDesignerButton {
   background-color: rgba(0, 0, 0, 0.5);
@@ -29,7 +48,7 @@
 }
 .loading {
   background: url("https://cdnjs.cloudflare.com/ajax/libs/galleriffic/2.0.1/css/loader.gif")
-    0 50% no-repeat;
+    50% 50% no-repeat;
   display: block;
   padding: 100px 0 10px 0;
   text-align: center;

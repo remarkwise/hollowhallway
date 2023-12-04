@@ -5,14 +5,12 @@
     "type": "Archetype",
     "name": "Mad Fool",
     "img": "https://i.imgur.com/Vm6KGTS.png",
-    "symbol": "A young man walking off a cliff, a dog, a rose",
-    "colors": "Yellow, white",
+    "symbol": "Young person walking off a cliff admiring a rose while a faithful dog is unable to speak",
     "meaning": "new beginnings, innocence, potential, taking risks",
+    "lifeExamples": "starting a new job, moving to a new city, starting a relationship, taking a leap of faith",
     "question": "Who is reckless? Upon reflection, how could this be like you?",
     "quote": "Men will always be mad, and those who think they can cure them are the maddest of all.",
-    "quoteSource": "Voltaire",
-    "tarotCard": "Fool",
-    "lifeExamples": "starting a new job, moving to a new city, starting a relationship, taking a leap of faith"
+    "quoteSource": "Voltaire"
   },
   {
     "id": 2,
@@ -21,13 +19,11 @@
     "name": "Magic Inventor",
     "img": "https://i.imgur.com/aR6kib6.png",
     "symbol": "A magician standing in front of an altar, holding a wand, a cup, a sword, and a pentacle",
-    "colors": "Red, black",
-    "meaning": "creation, power, manifestation",
+    "meaning": "creation, power, manifestation, risk of illusion",
+    "lifeExamples": "starting a new business, writing a book, painting a picture, composing a song",
     "question": "What magic can you keep up your sleaves? Why would you invent?",
     "quote": "The best way to predict the future is to invent it.",
-    "quoteSource": "Alan Kay",
-    "tarotCard": "Magician",
-    "lifeExamples": "starting a new business, writing a book, painting a picture, composing a song"
+    "quoteSource": "Alan Kay"
   },
   {
     "id": 3,
@@ -35,14 +31,12 @@
     "type": "Archetype",
     "name": "High Priestess",
     "img": "https://i.imgur.com/DkhipbP.png",
-    "symbol": "A woman sitting on a throne, holding a book",
-    "colors": "Blue, purple",
+    "symbol": "A woman sitting on a throne holding a book",
     "meaning": "intuition, wisdom, mystery",
+    "lifeExamples": "getting in touch with your intuition, developing your psychic abilities, starting a meditation practice",
     "question": "What would the highest version of yourself do?",
     "quote": "Books and doors are the same thing. You open them, and you go through into another world.",
-    "quoteSource": "Jeanette Winterson",
-    "tarotCard": "High Priestess",
-    "lifeExamples": "getting in touch with your intuition, developing your psychic abilities, starting a meditation practice"
+    "quoteSource": "Jeanette Winterson"
   },
   {
     "id": 4,
@@ -50,14 +44,12 @@
     "type": "Archetype",
     "name": "Forest Empress",
     "img": "https://i.imgur.com/zd0aTmA.png",
-    "symbol": "A woman sitting on a throne, surrounded by flowers and animals",
-    "colors": "Green, pink",
+    "symbol": "A woman sitting on a throne surrounded by flowers and animals",
     "meaning": "fertility, abundance, creativity",
+    "lifeExamples": "getting pregnant, starting a family, starting a new creative project, nurturing yourself",
     "question": "Where is your creativity most fertile?",
     "quote": "The clearest way into the Universe is through a forest wilderness.",
-    "quoteSource": "John Muir",
-    "tarotCard": "Empress",
-    "lifeExamples": "getting pregnant, starting a family, starting a new creative project, nurturing yourself"
+    "quoteSource": "John Muir"
   },
   {
     "id": 5,
@@ -65,14 +57,12 @@
     "type": "Archetype",
     "name": "Desert Emperor",
     "img": "https://i.imgur.com/40q80dA.png",
-    "symbol": "A man sitting on a throne, holding a scepter",
-    "colors": "Red, gold",
+    "symbol": "A man sitting on a throne holding a scepter required to bring water",
     "meaning": "power, authority, structure",
+    "lifeExamples": "starting your own company, becoming a manager, taking on a leadership role, setting boundaries",
     "question": "How will you lead?",
     "quote": "In the desert, the only god is a well.",
-    "quoteSource": "A Bedouin Proverb",
-    "tarotCard": "Emperor",
-    "lifeExamples": "starting your own company, becoming a manager, taking on a leadership role, setting boundaries"
+    "quoteSource": "A Bedouin Proverb"
   },
   {
     "id": 6,
@@ -80,14 +70,12 @@
     "type": "Archetype",
     "name": "Original Hierophant",
     "img": "https://i.imgur.com/ObrA0xG.png",
-    "symbol": "A man wearing a miter, holding a staff and two keys",
-    "colors": "White, gold",
+    "symbol": "A man wearing a miter holding a staff and two keys",
     "meaning": "tradition, religion, spirituality",
+    "lifeExamples": "getting married, having a child baptized, attending religious services, following a spiritual path",
     "question": "What is your next spiritual participation?",
     "quote": "Where the law ends, tyranny begins.",
-    "quoteSource": "William Pitt the Younger",
-    "tarotCard": "Hierophant",
-    "lifeExamples": "getting married, having a child baptized, attending religious services, following a spiritual path"
+    "quoteSource": "William Pitt the Younger"
   },
   {
     "id": 7,
@@ -95,14 +83,12 @@
     "type": "Archetype",
     "name": "Nearing Lovers",
     "img": "https://i.imgur.com/AnkR4An.png",
-    "symbol": "A man and a woman standing between two pillars, an angel above them",
-    "colors": "Red, pink",
+    "symbol": "A lovers standing between two pillars with an angelic figure above them",
     "meaning": "relationships, choices, commitment",
+    "lifeExamples": "falling in love, getting married, starting a relationship, making a difficult choice",
     "question": "Who will you commit to working with that you have not yet?",
     "quote": "The greatest thing you'll ever learn Is to love and be loved in return.",
-    "quoteSource": "Nat King Cole",
-    "tarotCard": "Lovers",
-    "lifeExamples": "falling in love, getting married, starting a relationship, making a difficult choice"
+    "quoteSource": "Nat King Cole"
   },
   {
     "id": 8,
@@ -111,13 +97,11 @@
     "name": "Path Chariot",
     "img": "https://i.imgur.com/3vJQJjA.png",
     "symbol": "A charioteer driving a chariot pulled by two sphinxes",
-    "colors": "Red, yellow",
     "meaning": "control, victory, determination",
+    "lifeExamples": "overcoming a challenge, achieving a goal, setting a new intention, moving forward with your life",
     "question": "What vehicle will get you where you need to be?",
     "quote": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "quoteSource": "Winston Churchill",
-    "tarotCard": "Chariot",
-    "lifeExamples": "overcoming a challenge, achieving a goal, setting a new intention, moving forward with your life"
+    "quoteSource": "Winston Churchill"
   },
   {
     "id": 9,
@@ -126,13 +110,11 @@
     "name": "Earned Strength",
     "img": "https://i.imgur.com/rMQhu8M.png",
     "symbol": "A woman taming a lion",
-    "colors": "Green, yellow",
     "meaning": "courage, power, self-control",
+    "lifeExamples": "dealing with a difficult situation, standing up for yourself, forgiving someone, healing from a trauma",
     "question": "Where do you need courage?",
     "quote": "Earn your leadership every day.",
-    "quoteSource": "Michael Jordan",
-    "tarotCard": "Strength",
-    "lifeExamples": "dealing with a difficult situation, standing up for yourself, forgiving someone, healing from a trauma"
+    "quoteSource": "Michael Jordan"
   },
   {
     "id": 10,
@@ -140,14 +122,12 @@
     "type": "Archetype",
     "name": "Changed Hermit",
     "img": "https://i.imgur.com/07gKeEx.png",
-    "symbol": "An old man wearing a cloak, holding a lantern",
-    "colors": "Blue, purple",
+    "symbol": "An old man wearing a cloak holding a lantern",
     "meaning": "reflection, introspection, wisdom",
+    "lifeExamples": "taking a sabbatical, going on a retreat, spending time in nature, reflecting on your life",
     "question": "Where do you need to spend time being introspective?",
     "quote": "Knowing yourself is the beginning of all wisdom.",
-    "quoteSource": "Aristotle",
-    "tarotCard": "Hermit",
-    "lifeExamples": "taking a sabbatical, going on a retreat, spending time in nature, reflecting on your life"
+    "quoteSource": "Aristotle"
   },
   {
     "id": 11,
@@ -156,13 +136,11 @@
     "name": "Spinning Wheel of Fortune",
     "img": "https://i.imgur.com/mZv1cO9.png",
     "symbol": "A wheel with eight spokes, a figure standing on top",
-    "colors": "Multicolored",
     "meaning": "change, fate, karma",
+    "lifeExamples": "experiencing a sudden change in your life, going through a difficult time, experiencing good luck",
     "question": "How do you define luck?",
     "quote": "It is not in the stars to hold our destiny but in ourselves.",
-    "quoteSource": "William Shakespeare",
-    "tarotCard": "Wheel of Fortune",
-    "lifeExamples": "experiencing a sudden change in your life, going through a difficult time, experiencing good luck"
+    "quoteSource": "William Shakespeare"
   },
   {
     "id": 12,
@@ -171,13 +149,11 @@
     "name": "Burdened Justice",
     "img": "https://i.imgur.com/4dToNcw.png",
     "symbol": "A woman holding a sword and scales",
-    "colors": "Black, white",
     "meaning": "fairness, balance, law",
+    "lifeExamples": "getting a promotion at work, winning a lawsuit, experiencing karma in action",
     "question": "When no one else is left to do so, how do you dispense justice? Why?",
     "quote": "Life is a balance of holding on and letting go.",
-    "quoteSource": "Rumi",
-    "tarotCard": "Justice",
-    "lifeExamples": "getting a promotion at work, winning a lawsuit, experiencing karma in action"
+    "quoteSource": "Rumi"
   },
   {
     "id": 13,
@@ -186,13 +162,11 @@
     "name": "Hanged Man",
     "img": "https://i.imgur.com/40EMxzS.png",
     "symbol": "A man hanging upside down from a tree",
-    "colors": "Blue, purple",
     "meaning": "sacrifice, surrender, new perspectives",
+    "lifeExamples": "changing your perspective, letting go of something old, surrendering to the process",
     "question": "What are you witnessing and how are you surrendering to it?",
     "quote": "When I let go of what I am, I become what I might be.",
-    "quoteSource": "Lao Tzu",
-    "tarotCard": "Hanged Man",
-    "lifeExamples": "changing your perspective, letting go of something old, surrendering to the process"
+    "quoteSource": "Lao Tzu"
   },
   {
     "id": 14,
@@ -201,13 +175,11 @@
     "name": "Death Balance",
     "img": "https://i.imgur.com/3o5PcDS.png",
     "symbol": "A skeleton riding a horse, a figure emerging from a tomb",
-    "colors": "Black, white",
     "meaning": "transformation, endings, new beginnings",
+    "lifeExamples": "ending a job, ending a relationship, moving to a new city, experiencing a transformation",
     "question": "What is one thing that you wish you knew before you started here?",
     "quote": "Death is not extinguishing the light; it is only putting out the lamp because the dawn has come.",
-    "quoteSource": "Rabindranath Tagore",
-    "tarotCard": "Death",
-    "lifeExamples": "ending a job, ending a relationship, moving to a new city, experiencing a transformation"
+    "quoteSource": "Rabindranath Tagore"
   },
   {
     "id": 15,
@@ -216,13 +188,11 @@
     "name": "Temperance",
     "img": "https://i.imgur.com/GzHPM6g.png",
     "symbol": "An angel pouring water from two urns",
-    "colors": "Blue, green",
     "meaning": "balance, moderation, patience",
+    "lifeExamples": "finding balance in your life, learning to say no, setting boundaries",
     "question": "How do you find balance?",
     "quote": "The greatest remedy for anger is delay.",
-    "quoteSource": "Seneca",
-    "tarotCard": "Temperance",
-    "lifeExamples": "finding balance in your life, learning to say no, setting boundaries"
+    "quoteSource": "Seneca"
   },
   {
     "id": 16,
@@ -231,13 +201,11 @@
     "name": "Slavedriver",
     "img": "https://i.imgur.com/e7cwpYr.png",
     "symbol": "A goat-headed figure with bat wings, two figures chained to him",
-    "colors": "Red, black",
     "meaning": "temptation, addiction, illusion",
+    "lifeExamples": "breaking free from an addiction, escaping a toxic relationship, letting go of negative thoughts and beliefs",
     "question": "Who do you owe? What are you escaping? Why are you trying to stay the same?",
     "quote": "Addiction begins with the hope that something 'out there' can instantly fill up the emptiness inside.",
-    "quoteSource": "Jean Kilbourne",
-    "tarotCard": "Devil",
-    "lifeExamples": "breaking free from an addiction, escaping a toxic relationship, letting go of negative thoughts and beliefs"
+    "quoteSource": "Jean Kilbourne"
   },
   {
     "id": 17,
@@ -246,13 +214,11 @@
     "name": "Split Tower",
     "img": "https://i.imgur.com/MEDVht6.png",
     "symbol": "A tower struck by lightning, three figures falling from it",
-    "colors": "Black, red",
     "meaning": "destruction, upheaval, change",
+    "lifeExamples": "experiencing a sudden change in your life, losing a job, going through a divorce, facing a major challenge",
     "question": "What is destruction to you? What would you change?",
     "quote": "Destruction is a man's will against the universe, creation is the universe's will against man.",
-    "quoteSource": "Marty Rubin",
-    "tarotCard": "Tower",
-    "lifeExamples": "experiencing a sudden change in your life, losing a job, going through a divorce, facing a major challenge"
+    "quoteSource": "Marty Rubin"
   },
   {
     "id": 18,
@@ -261,13 +227,11 @@
     "name": "North Star",
     "img": "https://i.imgur.com/3wD29UK.png",
     "symbol": "A woman pouring water from a jug, a star above her",
-    "colors": "Blue, green",
     "meaning": "hope, faith, inspiration",
+    "lifeExamples": "finding hope again after a difficult time, connecting with your spirituality, finding your purpose in life",
     "question": "What is Home? How do you get their?",
     "quote": "When it is dark enough, you can see the stars.\"",
-    "quoteSource": "Ralph Waldo Emerson",
-    "tarotCard": "Star",
-    "lifeExamples": "finding hope again after a difficult time, connecting with your spirituality, finding your purpose in life"
+    "quoteSource": "Ralph Waldo Emerson"
   },
   {
     "id": 19,
@@ -276,13 +240,11 @@
     "name": "Moon Shield",
     "img": "https://i.imgur.com/glDow7Z.png",
     "symbol": "A woman sitting on a crescent moon, surrounded by water and stars",
-    "colors": "Blue, black",
     "meaning": "intuition, subconscious, illusion",
+    "lifeExamples": "facing your fears, exploring your subconscious mind, developing your intuition",
     "question": "What are the seasons for you to shine or hide?",
     "quote": "We are all like the bright moon, we still have our darker side.",
-    "quoteSource": "Kahlil Gibran",
-    "tarotCard": "Moon",
-    "lifeExamples": "facing your fears, exploring your subconscious mind, developing your intuition"
+    "quoteSource": "Kahlil Gibran"
   },
   {
     "id": 20,
@@ -291,13 +253,11 @@
     "name": "Sun Birth",
     "img": "https://i.imgur.com/YG55ScY.png",
     "symbol": "A child playing in a field of flowers, a sun in the sky",
-    "colors": "Yellow, orange",
     "meaning": "happiness, success, fulfillment",
+    "lifeExamples": "achieving your goals, experiencing joy and happiness, feeling fulfilled in your life",
     "question": "What is the perfect summer? Why is now not that season?",
     "quote": "A life without love is like a year without summer.",
-    "quoteSource": "Swedish Proverb",
-    "tarotCard": "Sun",
-    "lifeExamples": "achieving your goals, experiencing joy and happiness, feeling fulfilled in your life"
+    "quoteSource": "Swedish Proverb"
   },
   {
     "id": 21,
@@ -306,13 +266,11 @@
     "name": "Judgment Moment",
     "img": "https://i.imgur.com/0cwaIh6.png",
     "symbol": "A figure rising from a tomb, an angel blowing a trumpet",
-    "colors": "White, gold",
     "meaning": "rebirth, transformation, new beginnings",
+    "lifeExamples": "making a big decision, starting a new chapter in your life, letting go of the past",
     "question": "What do you need to choose to start again?",
     "quote": "The only questions that really matter are the ones you ask yourself.",
-    "quoteSource": "Ursula K. Le Guin",
-    "tarotCard": "Judgement",
-    "lifeExamples": "making a big decision, starting a new chapter in your life, letting go of the past"
+    "quoteSource": "Ursula K. Le Guin"
   },
   {
     "id": 22,
@@ -321,13 +279,11 @@
     "name": "Whole World",
     "img": "https://i.imgur.com/cNWoe8P.png",
     "symbol": "A woman standing on a globe, surrounded by symbols of the four elements",
-    "colors": "Multicolored",
     "meaning": "completion, fulfillment, wholeness",
+    "lifeExamples": "completing a project, graduating from school, achieving a lifelong goal, feeling integrated and whole",
     "question": "What keeps you going each day?",
     "quote": "The world spins. We stumble on. It is enough.",
-    "quoteSource": "Colum McCann",
-    "tarotCard": "World",
-    "lifeExamples": "completing a project, graduating from school, achieving a lifelong goal, feeling integrated and whole"
+    "quoteSource": "Colum McCann"
   },
   {
     "id": 23,
@@ -336,13 +292,11 @@
     "name": "Dove",
     "img": "https://i.imgur.com/IZcl3Bo.png",
     "symbol": "A cup overflowing with water, a dove",
-    "colors": "Purple, pink, yellow",
     "meaning": "new beginnings, love, creativity",
+    "lifeExamples": "falling in love, getting married, having a child, experiencing a deep emotional connection with someone",
     "question": "What does peace feel like? How often do you experience it? What would you share with others about peace?",
     "quote": "I fell in love the way you fall asleep: slowly, and then all at once.",
-    "quoteSource": "",
-    "tarotCard": "Ace of Cups",
-    "lifeExamples": "falling in love, getting married, having a child, experiencing a deep emotional connection with someone"
+    "quoteSource": ""
   },
   {
     "id": 24,
@@ -351,13 +305,11 @@
     "name": "Libra Union",
     "img": "https://i.imgur.com/lh0bsZB.png",
     "symbol": "Two cups joined together",
-    "colors": "Purple, pink, yellow",
     "meaning": "partnership, harmony, balance",
+    "lifeExamples": "starting a new relationship, getting engaged, forming a partnership, working collaboratively with someone",
     "question": "What makes a balanced partnership? ",
     "quote": "Partnership is not a posture but a process - a continuous process that grows stronger each day.",
-    "quoteSource": "Ritu Ghatourey",
-    "tarotCard": "2 of Cups",
-    "lifeExamples": "starting a new relationship, getting engaged, forming a partnership, working collaboratively with someone"
+    "quoteSource": "Ritu Ghatourey"
   },
   {
     "id": 25,
@@ -366,13 +318,11 @@
     "name": "Celebration",
     "img": "https://i.imgur.com/PnwXodt.png",
     "symbol": "Three cups overflowing with water",
-    "colors": "Purple, pink, yellow",
     "meaning": "joy, celebration, abundance",
+    "lifeExamples": "celebrating with friends, going to a party, having a reunion, experiencing joy and happiness",
     "question": "Are you celebrating? Why?",
     "quote": "Celebrate what you want to see more of.",
-    "quoteSource": "Tom Peters",
-    "tarotCard": "3 of Cups",
-    "lifeExamples": "celebrating with friends, going to a party, having a reunion, experiencing joy and happiness"
+    "quoteSource": "Tom Peters"
   },
   {
     "id": 26,
@@ -381,13 +331,11 @@
     "name": "Contentment",
     "img": "https://i.imgur.com/bWtu4wa.png",
     "symbol": "A woman sitting under a tree, three cups in front of her",
-    "colors": "Purple, pink, yellow",
     "meaning": "contentment, satisfaction, withdrawal",
+    "lifeExamples": "feeling bored or restless, being in a rut, feeling disconnected from your emotions",
     "question": "Can you find contentment in the current moment?",
     "quote": "Contentment comes not from great wealth, but from few wants.",
-    "quoteSource": "Epictetus",
-    "tarotCard": "4 of Cups",
-    "lifeExamples": "feeling bored or restless, being in a rut, feeling disconnected from your emotions"
+    "quoteSource": "Epictetus"
   },
   {
     "id": 27,
@@ -396,13 +344,11 @@
     "name": "Drunk Heartbreak",
     "img": "https://i.imgur.com/KJzanRb.png",
     "symbol": "A man standing in front of five cups, two of which are spilled",
-    "colors": "Purple, pink, yellow",
     "meaning": "loss, grief, disappointment",
+    "lifeExamples": "experiencing heartbreak, loss, or disappointment, grieving a loss, moving on from a relationship",
     "question": "What loss causes you to want to forget or escape?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "5 of Cups",
-    "lifeExamples": "experiencing heartbreak, loss, or disappointment, grieving a loss, moving on from a relationship"
+    "quote": "To spare oneself from grief at all cost can be achieved only at the price of total detachment, which excludes the ability to experience happiness.",
+    "quoteSource": "Erich Fromm"
   },
   {
     "id": 28,
@@ -411,13 +357,11 @@
     "name": "Homeward Bound",
     "img": "https://i.imgur.com/lLdpf53.png",
     "symbol": "A child running towards a figure in the distance",
-    "colors": "Purple, pink, yellow",
     "meaning": "nostalgia, childhood, happiness",
+    "lifeExamples": "reconnecting with an old friend or lover, reminiscing about the past, experiencing nostalgia",
     "question": "What about yourself do you find the hardest to accept and love?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "6 of Cups",
-    "lifeExamples": "reconnecting with an old friend or lover, reminiscing about the past, experiencing nostalgia"
+    "quote": "The most terrifying thing is to accept oneself completely.",
+    "quoteSource": "Carl Gustav Jung"
   },
   {
     "id": 29,
@@ -426,13 +370,11 @@
     "name": "Mirage",
     "img": "https://i.imgur.com/hlsEkM3.png",
     "symbol": "A man looking at seven cups",
-    "colors": "Purple, pink, yellow",
     "meaning": "choices, illusion, fantasy",
+    "lifeExamples": "having too many options, feeling indecisive, being tempted by something",
     "question": "Are you choosing any mirages to chase?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "7 of Cups",
-    "lifeExamples": "having too many options, feeling indecisive, being tempted by something"
+    "quote": "An illusion can never go faster than the speed limit of reality",
+    "quoteSource": "Akiane Kramarik"
   },
   {
     "id": 30,
@@ -441,13 +383,11 @@
     "name": "Funeral",
     "img": "https://i.imgur.com/afq4W7z.png",
     "symbol": "A man walking away from eight cups",
-    "colors": "Purple, pink, yellow",
     "meaning": "letting go, transition, change",
-    "question": "If you could change anything about yourself, what would that be?",
+    "lifeExamples": "walking away from a relationship or situation, letting go of something, moving on",
+    "question": "If you could let something go within yourself, what would that be?",
     "quote": "Anything you can’t control is teaching you how to let go",
-    "quoteSource": "Jackson Kiddard",
-    "tarotCard": "8 of Cups",
-    "lifeExamples": "walking away from a relationship or situation, letting go of something, moving on"
+    "quoteSource": "Jackson Kiddard"
   },
   {
     "id": 31,
@@ -456,13 +396,11 @@
     "name": "Lounging Evening",
     "img": "https://i.imgur.com/HgGuQ3v.png",
     "symbol": "A woman sitting on a bench, surrounded by nine cups",
-    "colors": "Purple, pink, yellow",
     "meaning": "happiness, fulfillment, satisfaction",
+    "lifeExamples": "feeling satisfied and fulfilled, achieving your goals, experiencing abundance",
     "question": "What can you do today to embrace being fully satisified?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "9 of Cups",
-    "lifeExamples": "feeling satisfied and fulfilled, achieving your goals, experiencing abundance"
+    "quote": "Satisfaction lies in the effort, not in the attainment, full effort is full victory",
+    "quoteSource": "Mahatma Gandhi"
   },
   {
     "id": 32,
@@ -471,13 +409,11 @@
     "name": "Family Dinner",
     "img": "https://i.imgur.com/p3DvoTN.png",
     "symbol": "A family sitting in a circle, surrounded by cups",
-    "colors": "Purple, pink, yellow",
     "meaning": "abundance, joy, fulfillment",
-    "question": "How can you share your abundance joyfully with those closest?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "10 of Cups",
-    "lifeExamples": "happy family life, harmonious relationships, feeling loved and supported"
+    "lifeExamples": "happy family life, harmonious relationships, feeling loved and supported",
+    "question": "How can you joyfully share your abundance?",
+    "quote": "Happiness quite unshared can scarcely be called happiness; it has no taste.",
+    "quoteSource": "Charlotte Brontë"
   },
   {
     "id": 33,
@@ -486,13 +422,11 @@
     "name": "Lotus & Dove",
     "img": "https://i.imgur.com/NI7OlQH.png",
     "symbol": "Dove, lotus flower, chalice",
-    "colors": "Purple, pink, yellow",
     "meaning": "purity, beginnings, rebirth, receiving, inspiration, and resilience",
+    "lifeExamples": "new beginnings in love or relationships, receiving a gift, feeling creative or inspired",
     "question": "Why might you need to have a pure rebirth?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Page of Cups",
-    "lifeExamples": "new beginnings in love or relationships, receiving a gift, feeling creative or inspired"
+    "quote": "The phoenix must burn to emerge.",
+    "quoteSource": "Janet Fitch"
   },
   {
     "id": 34,
@@ -501,13 +435,11 @@
     "name": "Swan",
     "img": "https://i.imgur.com/rLwn0B3.png",
     "symbol": "Swan, fish, heart",
-    "colors": "Purple, pink, yellow",
     "meaning": "young love, courting, romance",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Knight of Cups",
-    "lifeExamples": "meeting someone new, being courted, experiencing romantic gestures"
+    "lifeExamples": "meeting someone new, being courted, experiencing romantic gestures",
+    "question": "How open are you to stand alone and allow new people into your life?",
+    "quote": "Let go of certainty. The opposite isn't uncertainty. It's openness, curiosity, and a willingness to embrace paradox.",
+    "quoteSource": "Tony Schwartz"
   },
   {
     "id": 35,
@@ -516,13 +448,11 @@
     "name": "Lake Queen",
     "img": "https://i.imgur.com/2hXkglg.png",
     "symbol": "Cup, chalice, water",
-    "colors": "Purple, pink, yellow",
     "meaning": "nurture, compassion, emotional intelligence",
+    "lifeExamples": "being a nurturing and compassionate person, having a strong emotional intelligence",
     "question": "Where can you seek wisdom and what's stopping you?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Queen of Cups",
-    "lifeExamples": "being a nurturing and compassionate person, having a strong emotional intelligence"
+    "quote": "It is not that I'm so smart. But I stay with the questions much longer.",
+    "quoteSource": "Albert Einstein"
   },
   {
     "id": 36,
@@ -531,13 +461,11 @@
     "name": "Ocean King",
     "img": "https://i.imgur.com/HNXkaRW.png",
     "symbol": "Fish, cup, water",
-    "colors": "Purple, pink, yellow",
     "meaning": "completion, fulfillment, wholeness",
+    "lifeExamples": "being a wise and compassionate leader, being in a position of authority",
     "question": "When do you feel whole?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "King of Cups",
-    "lifeExamples": "being a wise and compassionate leader, being in a position of authority"
+    "quote": "The privilege of a lifetime is to become who you truly are.",
+    "quoteSource": "Carl Gustav Jung"
   },
   {
     "id": 37,
@@ -546,13 +474,11 @@
     "name": "Lightning",
     "img": "https://i.imgur.com/2rxuZ80.png",
     "symbol": "A sword piercing a cloud",
-    "colors": "Blue, black",
     "meaning": "new beginnings, clarity, truth",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Ace of Swords",
-    "lifeExamples": "having a breakthrough, gaining new knowledge or insights, making a decision"
+    "lifeExamples": "having a breakthrough, gaining new knowledge or insights, making a decision",
+    "question": "Where can you harness lighting?",
+    "quote": "Genius is the ability to put into effect what is in your mind. There’s no other definition of it.",
+    "quoteSource": "F. Scott Fitzgerald"
   },
   {
     "id": 38,
@@ -561,13 +487,11 @@
     "name": "Face Off",
     "img": "https://i.imgur.com/yGv8V5G.png",
     "symbol": "Two swords crossed",
-    "colors": "Blue, black",
     "meaning": "indecision, stalemate, conflict",
+    "lifeExamples": "feeling indecisive, being stuck in a stalemate, having two conflicting options",
     "question": "If you were stuck in a loop for eternity, what would you want it to be?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "2 of Swords",
-    "lifeExamples": "feeling indecisive, being stuck in a stalemate, having two conflicting options"
+    "quote": "The only way to make sense out of change is to plunge into it, move with it, and join the dance.",
+    "quoteSource": "Alan Watts"
   },
   {
     "id": 39,
@@ -576,13 +500,11 @@
     "name": "Betrayal",
     "img": "https://i.imgur.com/wooZPCd.png",
     "symbol": "Three swords piercing a heart",
-    "colors": "Blue, black",
     "meaning": "sadness, heartbreak, loss",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "3 of Swords",
-    "lifeExamples": "experiencing heartbreak, loss, or betrayal, being hurt by someone"
+    "lifeExamples": "experiencing heartbreak, loss, or betrayal, being hurt by someone",
+    "question": "Where are you still healing from betrayal?",
+    "quote": "The wound is the place where the Light enters you.",
+    "quoteSource": "Rumi"
   },
   {
     "id": 40,
@@ -591,13 +513,11 @@
     "name": "Solitude ",
     "img": "https://i.imgur.com/aV62kx5.png",
     "symbol": "A woman resting under four swords",
-    "colors": "Blue, black",
     "meaning": "rest, peace, isolation",
+    "lifeExamples": "taking a break, resting and recharging, reflecting on your life",
     "question": "What is your cave (and its minimum requirements)?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "4 of Swords",
-    "lifeExamples": "taking a break, resting and recharging, reflecting on your life"
+    "quote": "n each of us is a private place where no one else can go.",
+    "quoteSource": "Anne Frank"
   },
   {
     "id": 41,
@@ -606,13 +526,11 @@
     "name": "Gladiator",
     "img": "https://i.imgur.com/fL2LydW.png",
     "symbol": "A man holding five swords",
-    "colors": "Blue, black",
     "meaning": "victory, competition, conflict",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "5 of Swords",
-    "lifeExamples": "winning an argument or debate, overcoming an obstacle, facing your fears"
+    "lifeExamples": "winning an argument or debate, overcoming an obstacle, facing your fears",
+    "question": "What does victory look like?",
+    "quote": "Victory is not always winning the battle...but rising every time you fall.",
+    "quoteSource": "Napoleon Bonaparte"
   },
   {
     "id": 42,
@@ -621,13 +539,11 @@
     "name": "Wanderlust ",
     "img": "https://i.imgur.com/gy1AdZo.png",
     "symbol": "A person sailing on a boat",
-    "colors": "Blue, black",
     "meaning": "travel, transition, change",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "6 of Swords",
-    "lifeExamples": "moving on from a difficult situation, making a change, starting a new chapter"
+    "lifeExamples": "moving on from a difficult situation, making a change, starting a new chapter",
+    "question": "Can you fall in love with going nowhere in particular? Would that help?",
+    "quote": "Sometimes it's the journey that teaches you a lot about your destination.",
+    "quoteSource": "Drake"
   },
   {
     "id": 43,
@@ -636,13 +552,11 @@
     "name": "Thief",
     "img": "https://i.imgur.com/14Ijqms.png",
     "symbol": "A man stealing five swords",
-    "colors": "Blue, black",
     "meaning": "deceit, trickery, deception",
+    "lifeExamples": "being deceived or lied to, experiencing betrayal, cheating",
     "question": "Do your actions reflect the type of person you would want to be around?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "7 of Swords",
-    "lifeExamples": "being deceived or lied to, experiencing betrayal, cheating"
+    "quote": "Be the change that you wish to see in the world.",
+    "quoteSource": "Mahatma Gandhi"
   },
   {
     "id": 44,
@@ -651,13 +565,11 @@
     "name": "Asylum Cell",
     "img": "https://i.imgur.com/wZFyeGf.png",
     "symbol": "A woman bound by eight swords",
-    "colors": "Blue, black",
     "meaning": "limitation, restriction, confusion",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "8 of Swords",
-    "lifeExamples": "feeling trapped or limited, being stuck in a rut, unable to make decisions"
+    "lifeExamples": "feeling trapped or limited, being stuck in a rut, unable to make decisions",
+    "question": "What is holding you in a place that makes you feel crazy?",
+    "quote": "The only real prison is fear, and the only real freedom is freedom from fear.",
+    "quoteSource": "Aung San Suu Kyi"
   },
   {
     "id": 45,
@@ -666,13 +578,11 @@
     "name": "The Deep",
     "img": "https://i.imgur.com/9khJz1h.png",
     "symbol": "A man lying on a bed, holding nine swords",
-    "colors": "Blue, black",
     "meaning": "sorrow, despair, anxiety",
+    "lifeExamples": "experiencing anxiety or worry, feeling overwhelmed, having nightmares",
     "question": "What is your deepest fear?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "9 of Swords",
-    "lifeExamples": "experiencing anxiety or worry, feeling overwhelmed, having nightmares"
+    "quote": "Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure.",
+    "quoteSource": "Marianne Williamson"
   },
   {
     "id": 46,
@@ -681,13 +591,11 @@
     "name": "Maze Rat",
     "img": "https://i.imgur.com/Y1viRa3.png",
     "symbol": "A man lying on the ground, surrounded by ten swords",
-    "colors": "Blue, black",
     "meaning": "defeat, despair, hopelessness",
-    "question": "",
+    "lifeExamples": "reaching a breaking point, experiencing a setback, facing a difficult challenge",
+    "question": "Are you confined in a puzzle? How is the puzzle constructed?",
     "quote": "A rat in a maze is free to go anywhere in the maze",
-    "quoteSource": "Margaret Atwood",
-    "tarotCard": "10 of Swords",
-    "lifeExamples": "reaching a breaking point, experiencing a setback, facing a difficult challenge"
+    "quoteSource": "Margaret Atwood"
   },
   {
     "id": 47,
@@ -696,13 +604,11 @@
     "name": "Open Cocoon ",
     "img": "https://i.imgur.com/Izfwy2n.png",
     "symbol": "Butterfly, sword, feather",
-    "colors": "Blue, black",
     "meaning": "new ideas, enthusiasm, curiosity, eagerness",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Page of Swords",
-    "lifeExamples": "starting a new project, learning a new skill, expressing yourself creatively"
+    "lifeExamples": "starting a new project, learning a new skill, expressing yourself creatively",
+    "question": "What is your final transformation?",
+    "quote": "And the day came when the risk to remain tight in a bud was more painful than the risk it took to blossom.",
+    "quoteSource": "Anaïs Nin"
   },
   {
     "id": 48,
@@ -711,13 +617,11 @@
     "name": "War Horse",
     "img": "https://i.imgur.com/47lAEEC.png",
     "symbol": "Horse, sword, armor",
-    "colors": "Blue, black",
     "meaning": "boldness, bravery, confidence, determination",
-    "question": "",
+    "lifeExamples": "taking action, moving forward with your plans, being assertive",
+    "question": "Where do you need to be brave and carry the load?",
     "quote": "You are so brave and quiet I forget you are suffering",
-    "quoteSource": "Ernest Hemingway",
-    "tarotCard": "Knight of Swords",
-    "lifeExamples": "taking action, moving forward with your plans, being assertive"
+    "quoteSource": "Ernest Hemingway"
   },
   {
     "id": 49,
@@ -726,13 +630,11 @@
     "name": "Spider Queen",
     "img": "https://i.imgur.com/1O9Fm9B.png",
     "symbol": "Sword, blindfold, scales",
-    "colors": "Blue, black",
     "meaning": "intellect, discernment, clarity, objectivity",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Queen of Swords",
-    "lifeExamples": "being intelligent and analytical, speaking your truth, being independent"
+    "lifeExamples": "being intelligent and analytical, speaking your truth, being independent",
+    "question": "Looking inward, what needs to be strung together for balance?",
+    "quote": "I ask not for a lighter burden, but for broader shoulders.",
+    "quoteSource": "Jewish Proverb"
   },
   {
     "id": 50,
@@ -741,13 +643,11 @@
     "name": "King Cartographer",
     "img": "https://i.imgur.com/JhHstb1.png",
     "symbol": "Sword, scales, throne",
-    "colors": "Blue, black",
     "meaning": "wisdom, justice, authority, discernment",
+    "lifeExamples": "being a fair and just leader, using your intellect wisely",
     "question": "Who is your greatest influence? Who are you influencing?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "King of Swords",
-    "lifeExamples": "being a fair and just leader, using your intellect wisely"
+    "quote": "Happiness is not a matter of intensity but of balance and order and rhythm and harmony.",
+    "quoteSource": "Thomas Merton"
   },
   {
     "id": 51,
@@ -756,13 +656,11 @@
     "name": "Green Field",
     "img": "https://i.imgur.com/aHffa7J.png",
     "symbol": "A pentacle on a green field",
-    "colors": "Green, brown",
     "meaning": "new beginnings, abundance, material wealth",
+    "lifeExamples": "getting a new job, starting a new business, receiving a financial blessing, experiencing abundance",
     "question": "What are you growing? How do you forecast your yield?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Ace of Pentacles",
-    "lifeExamples": "getting a new job, starting a new business, receiving a financial blessing, experiencing abundance"
+    "quote": "We never know which lives we influence, or when, or why.",
+    "quoteSource": "Stephen King"
   },
   {
     "id": 52,
@@ -771,13 +669,11 @@
     "name": "Priority Audit",
     "img": "https://i.imgur.com/W8R6RLl.png",
     "symbol": "Two pentacles being balanced by a woman",
-    "colors": "Green, brown",
     "meaning": "balance, choice, negotiation",
+    "lifeExamples": "juggling multiple projects, finding balance in your life, learning to manage your time and resources",
     "question": "Are you choosing people that are also choosing you?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "2 of Pentacles",
-    "lifeExamples": "juggling multiple projects, finding balance in your life, learning to manage your time and resources"
+    "quote": "The true meaning of life is to plant trees, under whose shade you do not expect to sit.",
+    "quoteSource": "Nelson Henderson"
   },
   {
     "id": 53,
@@ -786,13 +682,11 @@
     "name": "The Firm",
     "img": "https://i.imgur.com/8zqvfZU.png",
     "symbol": "Three pentacles being worked on by three people",
-    "colors": "Green, brown",
     "meaning": "cooperation, teamwork, skill",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "3 of Pentacles",
-    "lifeExamples": "working on a team project, collaborating with others, achieving a common goal"
+    "lifeExamples": "working on a team project, collaborating with others, achieving a common goal",
+    "question": "What are the values of those partnering together with you?",
+    "quote": "We accept the love we think we deserve.",
+    "quoteSource": "Stephen Chbosky, The Perks of Being a Wallflower"
   },
   {
     "id": 54,
@@ -801,13 +695,11 @@
     "name": "Grasping Miser",
     "img": "https://i.imgur.com/HQSU0dc.png",
     "symbol": "A man holding a pentacle",
-    "colors": "Green, brown",
     "meaning": "materialism, security, greed",
+    "lifeExamples": "holding on to your possessions or money too tightly, being materialistic, feeling insecure",
     "question": "Do the things you do or the people you spend time with make you happy?",
     "quote": "The less I needed, the better I felt.",
-    "quoteSource": "Charles Bukowski",
-    "tarotCard": "4 of Pentacles",
-    "lifeExamples": "holding on to your possessions or money too tightly, being materialistic, feeling insecure"
+    "quoteSource": "Charles Bukowski"
   },
   {
     "id": 55,
@@ -816,13 +708,11 @@
     "name": "Winter Beggars",
     "img": "https://i.imgur.com/7pCBYkG.png",
     "symbol": "Three beggars standing on a snowy ground",
-    "colors": "Green, brown",
     "meaning": "poverty, loss, need",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "5 of Pentacles",
-    "lifeExamples": "experiencing financial hardship, losing a job, going through a difficult time"
+    "lifeExamples": "experiencing financial hardship, losing a job, going through a difficult time",
+    "question": "How will you weather the loss in a dark and cold time?",
+    "quote": "In the depth of winter, I finally learned that within me there lay an invincible summer.",
+    "quoteSource": "Albert Camus"
   },
   {
     "id": 56,
@@ -831,13 +721,11 @@
     "name": "Charity",
     "img": "https://i.imgur.com/SLAOcrD.png",
     "symbol": "A man giving a pentacle to a beggar",
-    "colors": "Green, brown",
     "meaning": "charity, generosity, abundance",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "6 of Pentacles",
-    "lifeExamples": "receiving financial assistance, giving back to the community, helping others"
+    "lifeExamples": "receiving financial assistance, giving back to the community, helping others",
+    "question": "Can you be willing to receive help?",
+    "quote": "Asking for help does not mean that we are weak or incompetent. It usually indicates an advanced level of honesty and intelligence.",
+    "quoteSource": "Anne Wilson Schaef"
   },
   {
     "id": 57,
@@ -846,13 +734,11 @@
     "name": "Farmer",
     "img": "https://i.imgur.com/pi8OSz3.png",
     "symbol": "A farmer working in the field",
-    "colors": "Green, brown",
     "meaning": "hard work, patience, reward",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "7 of Pentacles",
-    "lifeExamples": "working towards a long-term goal, being patient and persistent, reaping the rewards of your hard work"
+    "lifeExamples": "working towards a long-term goal, being patient and persistent, reaping the rewards of your hard work",
+    "question": "What seeds do you plant and how often do you tend to their growth?",
+    "quote": "Don't judge each day by the harvest you reap but by the seeds that you plant.",
+    "quoteSource": "Robert Louis Stevenson"
   },
   {
     "id": 58,
@@ -861,13 +747,11 @@
     "name": "Craftsman",
     "img": "https://i.imgur.com/iXCSKwg.png",
     "symbol": "A craftsman working on a piece of jewelry",
-    "colors": "Green, brown",
     "meaning": "mastery, skill, diligence",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "8 of Pentacles",
-    "lifeExamples": "learning a new skill, mastering a craft, taking pride in your work"
+    "lifeExamples": "learning a new skill, mastering a craft, taking pride in your work",
+    "question": "Where do you need to refine your craft?",
+    "quote": "The artist is always beginning. Any work of art which is not a beginning, an invention, a discovery is of little worth.",
+    "quoteSource": "Ezra Pound"
   },
   {
     "id": 59,
@@ -876,13 +760,11 @@
     "name": "The Laboratory ",
     "img": "https://i.imgur.com/KatpmeE.png",
     "symbol": "A man sitting in a garden, surrounded by pentacles",
-    "colors": "Green, brown",
     "meaning": "comfort, satisfaction, security",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "9 of Pentacles",
-    "lifeExamples": "achieving financial security, living a comfortable lifestyle, enjoying the fruits of your labor"
+    "lifeExamples": "achieving financial security, living a comfortable lifestyle, enjoying the fruits of your labor",
+    "question": "Where can you experiment in healthy ways?",
+    "quote": "The only way to discover the limits of the possible is to go beyond them into the impossible.",
+    "quoteSource": "Arthur C. Clarke"
   },
   {
     "id": 60,
@@ -891,13 +773,11 @@
     "name": "New Home",
     "img": "https://i.imgur.com/BAPorD1.png",
     "symbol": "A family sitting in front of their home",
-    "colors": "Green, brown",
     "meaning": "success, abundance, family",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "10 of Pentacles",
-    "lifeExamples": "building a legacy, leaving something behind for future generations, experiencing generational wealth"
+    "lifeExamples": "building a legacy, leaving something behind for future generations, experiencing generational wealth",
+    "question": "What legacy are you building?",
+    "quote": "Legacy is not leaving something for people. It's leaving something in people.",
+    "quoteSource": "Peter Strople"
   },
   {
     "id": 61,
@@ -905,59 +785,51 @@
     "type": "Archetype",
     "name": "Coin Purse",
     "img": "https://i.imgur.com/dbDbifT.png",
-    "symbol": "Coin, pentacle, earth",
-    "colors": "Green, brown",
+    "symbol": "Coin, richness, earth",
     "meaning": "starting a new business, learning a new skill, finding your passion",
-    "question": "",
+    "lifeExamples": "starting a new business, learning a new skill, finding your passion",
+    "question": "Are you saving for your next big thing?",
     "quote": "You can't go back and change the beginning, but you can start where you are and change the ending.",
-    "quoteSource": "C.S. Lewis",
-    "tarotCard": "Page of Pentacles",
-    "lifeExamples": "starting a new business, learning a new skill, finding your passion"
+    "quoteSource": "C.S. Lewis"
   },
   {
     "id": 62,
     "suit": "Root",
-    "type": "Archetype",
+    "type": "Essence",
     "name": "Work Horse",
     "img": "https://i.imgur.com/UD5vi0O.png",
-    "symbol": "Horse, pentacle, earth",
-    "colors": "Green, brown",
+    "symbol": "determination, work, loyalty",
     "meaning": "hard work, dedication, perseverance, patience",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Knight of Pentacles",
-    "lifeExamples": "taking action, moving forward with your plans, being reliable and dependable"
+    "lifeExamples": "taking action, moving forward with your plans, being reliable and dependable",
+    "question": "What would bolster your determination?",
+    "quote": "The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack in will.",
+    "quoteSource": "Vince Lombardi"
   },
   {
     "id": 63,
     "suit": "Root",
-    "type": "Archetype",
+    "type": "Object",
     "name": "Cornucopia ",
     "img": "https://i.imgur.com/f6t4ier.png",
     "symbol": "Pentacle, cornucopia, earth",
-    "colors": "Green, brown",
     "meaning": "abundance, prosperity, generosity, practicality",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Queen of Pentacles",
-    "lifeExamples": "being a nurturing and supportive person, creating a comfortable home, being grounded and practical"
+    "lifeExamples": "being a nurturing and supportive person, creating a comfortable home, being grounded and practical",
+    "question": "Are you letting yourself be comforted? Where are you generous?",
+    "quote": "You cannot pour from an empty cup. Take care of yourself first.",
+    "quoteSource": "Unknown"
   },
   {
     "id": 64,
     "suit": "Root",
-    "type": "Archetype",
+    "type": "Place",
     "name": "Earth Throne",
     "img": "https://i.imgur.com/eyMurc0.png",
     "symbol": "Pentacle, throne, earth",
-    "colors": "Green, brown",
     "meaning": "success, abundance, prosperity, wisdom",
-    "question": "",
+    "lifeExamples": "being a successful and prosperous businessperson, being a wise and generous leader, being grounded and practical",
+    "question": "Are you making time for wisdom?",
     "quote": "",
-    "quoteSource": "",
-    "tarotCard": "King of Pentacles",
-    "lifeExamples": "being a successful and prosperous businessperson, being a wise and generous leader, being grounded and practical"
+    "quoteSource": ""
   },
   {
     "id": 65,
@@ -966,28 +838,24 @@
     "name": "Sapling ",
     "img": "https://i.imgur.com/7HXSZOz.png",
     "symbol": "A wand sprouting from the ground",
-    "colors": "Red, orange",
     "meaning": "represents new beginnings, creativity, or inspiration",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Ace of Wands",
-    "lifeExamples": "starting a new business, having a creative breakthrough, falling in love, feeling inspired"
+    "lifeExamples": "starting a new business, having a creative breakthrough, falling in love, feeling inspired",
+    "question": "What new beginnings can you grow?",
+    "quote": "And suddenly you know: It's time to start something new and trust the magic of beginnings.",
+    "quoteSource": "Meister Eckhart"
   },
   {
     "id": 66,
     "suit": "Stem",
-    "type": "Object",
+    "type": "Place",
     "name": "Cross Roads",
     "img": "https://i.imgur.com/zMTrYP1.png",
     "symbol": "Two wands being held by a man",
-    "colors": "Red, orange",
     "meaning": "choice, decision, direction",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "2 of Wands",
-    "lifeExamples": "planning a new project, making a decision, weighing your options"
+    "lifeExamples": "planning a new project, making a decision, weighing your options",
+    "question": "What's the difficult choice?",
+    "quote": "Sometimes the hardest thing and the right thing are the same.",
+    "quoteSource": "The Fray"
   },
   {
     "id": 67,
@@ -996,178 +864,154 @@
     "name": "Transmitter ",
     "img": "https://i.imgur.com/TmgYIKV.png",
     "symbol": "Three wands pointing upwards",
-    "colors": "Red, orange",
     "meaning": "success, achievement, communication",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "3 of Wands",
-    "lifeExamples": "setting goals, taking action, moving forward"
+    "lifeExamples": "setting goals, taking action, moving forward",
+    "question": "Where can you communicate your goals to foster support?",
+    "quote": "Alone we can do so little; together we can do so much.",
+    "quoteSource": "Helen Keller"
   },
   {
     "id": 68,
     "suit": "Stem",
-    "type": "Object",
+    "type": "Place",
     "name": "Square Cottage",
     "img": "https://i.imgur.com/4WAFrP6.png",
     "symbol": "Four wands arranged in a square",
-    "colors": "Red, orange",
     "meaning": "celebration, homecoming, peace",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "4 of Wands",
-    "lifeExamples": "celebrating a success, spending time with loved ones, feeling happy and fulfilled"
+    "lifeExamples": "celebrating a success, spending time with loved ones, feeling happy and fulfilled",
+    "question": "When do you need to spend peaceful time at home?",
+    "quote": "Peace – that was the other name for home.",
+    "quoteSource": "Kathleen Norris"
   },
   {
     "id": 69,
     "suit": "Stem",
-    "type": "Object",
+    "type": "Place",
     "name": "Gladiator Pit",
     "img": "https://i.imgur.com/bIFkXa0.png",
     "symbol": "Five wands being fought over by two people",
-    "colors": "Red, orange",
     "meaning": "conflict, competition, struggle",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "5 of Wands",
-    "lifeExamples": "facing a challenge, competing with others, overcoming an obstacle"
+    "lifeExamples": "facing a challenge, competing with others, overcoming an obstacle",
+    "question": "What are you willing to leave it all out there in front of everyone to see?",
+    "quote": "Vulnerability is not winning or losing; it’s having the courage to show up and be seen when we have no control over the outcome.",
+    "quoteSource": "Brené Brown"
   },
   {
     "id": 70,
     "suit": "Stem",
-    "type": "Object",
+    "type": "Moment",
     "name": "Award Ceremony ",
     "img": "https://i.imgur.com/ovumlpv.png",
     "symbol": "A man walking towards a city, carrying a wand",
-    "colors": "Red, orange",
     "meaning": "success, victory, achievement",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "6 of Wands",
-    "lifeExamples": "achieving a goal, receiving recognition, feeling successful"
+    "lifeExamples": "achieving a goal, receiving recognition, feeling successful",
+    "question": "Are you recongizing your achievements or onto the next thing?",
+    "quote": "Success is a journey, not a destination. The doing is often more important than the outcome.",
+    "quoteSource": "Arthur Ashe"
   },
   {
     "id": 71,
     "suit": "Stem",
-    "type": "Object",
+    "type": "Place",
     "name": "Shelter",
     "img": "https://i.imgur.com/R5mlh3l.png",
     "symbol": "A man defending himself with a wand",
-    "colors": "Red, orange",
     "meaning": "defense, protection, challenge",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "7 of Wands",
-    "lifeExamples": "defending yourself, standing up for what you believe in, facing a difficult situation"
+    "lifeExamples": "defending yourself, standing up for what you believe in, facing a difficult situation",
+    "question": "Do you know how to shelter yourself?",
+    "quote": "Taking care of yourself doesn't mean me first, it means me too.",
+    "quoteSource": "L.R. Knost"
   },
   {
     "id": 72,
     "suit": "Stem",
-    "type": "Object",
+    "type": "Vehicle",
     "name": "Spaceship",
     "img": "https://i.imgur.com/gXM8Csf.png",
     "symbol": "Eight wands flying through the air",
-    "colors": "Red, orange",
     "meaning": "travel, communication, news",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "8 of Wands",
-    "lifeExamples": "traveling, communicating with others, spreading your message"
+    "lifeExamples": "traveling, communicating with others, spreading your message",
+    "question": "Where do you wish to travel and connect with others?",
+    "quote": "Travel is fatal to prejudice, bigotry, and narrow-mindedness.",
+    "quoteSource": "Mark Twain"
   },
   {
     "id": 73,
     "suit": "Stem",
-    "type": "Object",
+    "type": "Essence",
     "name": "The Determined ",
     "img": "https://i.imgur.com/BdZnipW.png",
     "symbol": "A man holding nine wands",
-    "colors": "Red, orange",
     "meaning": "endurance, determination, stress",
+    "lifeExamples": "perseverance, overcoming challenges, staying strong in the face of adversity",
     "question": "How will you turn this negative situation into something positive?",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "9 of Wands",
-    "lifeExamples": "perseverance, overcoming challenges, staying strong in the face of adversity"
+    "quote": "Clarity comes from engagement, not thought.",
+    "quoteSource": "Marie Forleo"
   },
   {
     "id": 74,
     "suit": "Stem",
-    "type": "Object",
+    "type": "Archetype",
     "name": "Former Ballerina",
     "img": "https://i.imgur.com/cbMHd50.png",
     "symbol": "A man collapsing under the weight of ten wands",
-    "colors": "Red, orange",
     "meaning": "exhaustion, defeat, despair",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "10 of Wands",
-    "lifeExamples": "feeling overwhelmed, carrying too much weight, needing to let go"
+    "lifeExamples": "feeling overwhelmed, carrying too much weight, needing to let go",
+    "question": "Do you feel unable to go on? What can you change in how you perform?",
+    "quote": "Hope is being able to see that there is light despite all of the darkness.",
+    "quoteSource": "Desmond Tutu"
   },
   {
     "id": 75,
     "suit": "Stem",
-    "type": "Archetype",
+    "type": "Moment",
     "name": "Reform",
     "img": "https://i.imgur.com/5mxFeKM.png",
     "symbol": "Salamander, wand, fire",
-    "colors": "Red, orange",
     "meaning": "new ideas, excitement, curiosity, eagerness",
-    "question": "",
+    "lifeExamples": "new beginnings, enthusiasm, creativity",
+    "question": "What would help you evolve creatively?",
     "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Page of Wands",
-    "lifeExamples": "new beginnings, enthusiasm, creativity"
+    "quoteSource": ""
   },
   {
     "id": 76,
     "suit": "Stem",
-    "type": "Archetype",
+    "type": "Essence",
     "name": "Stuck Elephant",
     "img": "https://i.imgur.com/cIfIz8J.png",
     "symbol": "Horse, wand, fire",
-    "colors": "Red, orange",
     "meaning": "boldness, bravery, confidence, determination",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Knight of Wands",
-    "lifeExamples": "taking action, moving forward, being impulsive"
+    "lifeExamples": "taking action, moving forward, being impulsive",
+    "question": "Where do you need to charge ahead with confidence?",
+    "quote": "Confidence is not 'they will like me'. Confidence instead is 'I’ll be fine if they don’t'.",
+    "quoteSource": "Christina Grimmie"
   },
   {
     "id": 77,
     "suit": "Stem",
-    "type": "Archetype",
+    "type": "Essence",
     "name": "Lioness ",
     "img": "https://i.imgur.com/I1CsQFr.png",
     "symbol": "Wand, lion, fire",
-    "colors": "Red, orange",
     "meaning": "creativity, leadership, enthusiasm, passion",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "Queen of Wands",
-    "lifeExamples": "confidence, passion, independence"
+    "lifeExamples": "confidence, passion, independence",
+    "question": "What can you bring to your tribe?",
+    "quote": "The strength of the team is each individual member. The strength of each member is the team.",
+    "quoteSource": "Phil Jackson"
   },
   {
     "id": 78,
     "suit": "Stem",
-    "type": "Archetype",
-    "name": "Porcelain Throne",
-    "img": "https://i.imgur.com/lpqkZYv.png",
+    "type": "Place",
+    "name": "Porcelain Bath",
+    "img": "https://i.imgur.com/h396vJY.png",
     "symbol": "Wand, throne, fire",
-    "colors": "Red, orange",
     "meaning": "strength, authority, confidence, creativity",
-    "question": "",
-    "quote": "",
-    "quoteSource": "",
-    "tarotCard": "King of Wands",
-    "lifeExamples": "leadership, vision, success"
+    "lifeExamples": "leadership, vision, success",
+    "question": "Are you sitting to consider your vision on success?",
+    "quote": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+    "quoteSource": "Albert Schweitzer"
   },
   {
     "id": 79,
@@ -1176,13 +1020,11 @@
     "name": "Hand Mirror",
     "img": "https://i.imgur.com/2vi48Cf.png",
     "symbol": "Reflection, ego, aging",
-    "colors": "",
     "meaning": "reflection, ego, aging",
+    "lifeExamples": "cross-roads review, self assessment, aging gracefully",
     "question": "How would you describe your relationship with yourself in one word?",
     "quote": "All language is but a poor translation",
-    "quoteSource": "Franz Kafka",
-    "tarotCard": "",
-    "lifeExamples": "cross-roads review, self assessment, aging gracefully"
+    "quoteSource": "Franz Kafka"
   },
   {
     "id": 80,
@@ -1190,13 +1032,375 @@
     "type": "Place",
     "name": "Volcano",
     "img": "https://i.imgur.com/Tpdml0V.png",
-    "symbol": "Volcano, thriving island",
-    "colors": "Red, black",
+    "symbol": "Volcano beginning to leak lava on a thriving island",
     "meaning": "dormant rage, isolation, dangerous fertility",
+    "lifeExamples": "anger while unable to directly express it, resentful because your needs are put after others, complex awareness that there's more that you can offer or grow if you weren't left dormant",
     "question": "What makes you angry?",
+    "quote": "Anybody can become angry — that is easy, but to be angry with the right person and to the right degree and at the right time and for the right purpose, and in the right way — that is not within everybody's power and is not easy.",
+    "quoteSource": "Aristotle"
+  },
+  {
+    "id": 81,
+    "suit": "",
+    "type": "",
+    "name": "Bloom & Decay",
+    "img": "https://i.imgur.com/ZUjoUWD.png",
+    "symbol": "Roses and rotten fruit",
+    "meaning": "life cycle, alpha-omega, life's guarantee",
+    "lifeExamples": "the turning of something once loved into criticism, overworked and undervalued, wastefulness, or letting an abundance disappear ",
+    "question": "What may be about to bloom? What could have rotted?",
     "quote": "",
-    "quoteSource": "",
-    "tarotCard": "",
-    "lifeExamples": ""
+    "quoteSource": ""
+  },
+  {
+    "id": 82,
+    "suit": "",
+    "type": "",
+    "name": "Vampire",
+    "img": "https://i.imgur.com/hUNeG1E.png",
+    "symbol": "Draining force of unnatural origins",
+    "meaning": "narcissism, draining, unending vanity",
+    "lifeExamples": "abusive relationship, toxic environment, burnout, addiction slowly destroying your life",
+    "question": "What public or secretly drains your energy or invades energetic boundaries?",
+    "quote": "Energy vampires prey on others because they are in pain, and their behavior is a disguised cry for help.",
+    "quoteSource": "Judith Orloff"
+  },
+  {
+    "id": 83,
+    "suit": "",
+    "type": "",
+    "name": "Locked Gates",
+    "img": "https://i.imgur.com/S6qFvZ6.png",
+    "symbol": "Blocked and dismissed at the gates",
+    "meaning": "denial, spurning, dismissal, disapproval",
+    "lifeExamples": "denied opportunities, career block, excluded from groups, ostracized because of your beliefs or association",
+    "question": "What can you learn from this experience, and how can it contribute to your growth or the achievement of your goals?",
+    "quote": "I am thankful for my struggle because without it I wouldn't have stumbled across my strength.",
+    "quoteSource": "Alex Elle"
+  },
+  {
+    "id": 84,
+    "suit": "",
+    "type": "",
+    "name": "Adrift Boat",
+    "img": "https://i.imgur.com/GGETQv5.png",
+    "symbol": "empty boat left behind by others on an ocean",
+    "meaning": "aimless travel, rejection, without purposeful direction",
+    "lifeExamples": "alone after a major life change, such as a death in the family or a divorce, abandoned by those close to you, need for a sense of purpose",
+    "question": "What are your core values and passions, and how can I align your actions to resonate with them?",
+    "quote": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+    "quoteSource": "Ralph Waldo Emerson"
+  },
+  {
+    "id": 85,
+    "suit": "",
+    "type": "",
+    "name": "Deflated Balloon",
+    "img": "https://i.imgur.com/cDVWBGu.png",
+    "symbol": "Intense shame and contorted soul",
+    "meaning": "compressed, misshapen, humiliation",
+    "lifeExamples": "no longer joyful, experiencing guilt and regret over a past mistake, carrying the weight of trauma and abuse, feeling low and unsure how to pick yourself up",
+    "question": "What are the small steps you can take right now to care for yourself or improve your situation?",
+    "quote": "Do not wait until the conditions are perfect to begin. Beginning makes the conditions perfect.",
+    "quoteSource": "Alan Cohen"
+  },
+  {
+    "id": 86,
+    "suit": "",
+    "type": "",
+    "name": "Poison Tea",
+    "img": "https://i.imgur.com/wn3JL6h.png",
+    "symbol": "Sense of imbalance, hallucination of fear demons, sickness",
+    "meaning": "hallucination, imbalance, unjust sickness",
+    "lifeExamples": "forced or obligated at a great cost, discreetly eroding practice, seems ordinary to everyone but the consumer of the toxins",
+    "question": "What are the sources of toxicity in your life, and how can you reduce exposure to them?",
+    "quote": "Letting go of toxic people in your life is a big step in loving yourself.",
+    "quoteSource": "Hussein Nishah"
+  },
+  {
+    "id": 87,
+    "suit": "",
+    "type": "",
+    "name": "Vocation Shift",
+    "img": "https://i.imgur.com/Q4ilMCy.png",
+    "symbol": "a positive redirection from a stark sad place with phoenix energy",
+    "meaning": "rising, clarity, belonging",
+    "lifeExamples": "reclaiming your life, survival, learning to love again, self acceptance, release of doubt",
+    "question": "Where can you look later to keep this clarity?",
+    "quote": "Live as if you were living a second time, and as though you had acted wrongly the first time.",
+    "quoteSource": "Viktor Frankl"
+  },
+  {
+    "id": 88,
+    "suit": "",
+    "type": "",
+    "name": "Wu Wei River",
+    "img": "https://i.imgur.com/b6ahfGt.png",
+    "symbol": "a koi in the flow of a clear running river",
+    "meaning": "acceptance, peaceful surrender to the current, going with the flow",
+    "lifeExamples": "no action is best in the flow at times, conservation of energy, acceptance that not everything is better when you try to control, harmonious life in alignment with your values and purpose",
+    "question": "What can you not control in this situation, and how can you find peace with that?",
+    "quote": "Grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference.",
+    "quoteSource": "Reinhold Niebuhr"
+  },
+  {
+    "id": 89,
+    "suit": "",
+    "type": "",
+    "name": "Lost Identity",
+    "img": "https://i.imgur.com/ecYnGYN.png",
+    "symbol": "faceless person looking into a mirror",
+    "meaning": "desperate need to orient, lacking traction, risk of voicelessness",
+    "lifeExamples": "disconnected from your true self, questioning your worth, struggling to understand your place in the world",
+    "question": "Who are you?",
+    "quote": "The only journey is the journey within.",
+    "quoteSource": "Rainer Maria Rilke"
+  },
+  {
+    "id": 90,
+    "suit": "",
+    "type": "",
+    "name": "Hidden Offering",
+    "img": "https://i.imgur.com/y4zMBeM.png",
+    "symbol": "two people on either side of an interesting designed door with one person holding something behind their back",
+    "meaning": "promise, surprise, anticipation",
+    "lifeExamples": "questions on perspectives or agendas, opportunities that may have potential disappointment, dynamic relationships",
+    "question": "What do you long to see?",
+    "quote": "",
+    "quoteSource": ""
+  },
+  {
+    "id": 91,
+    "suit": "",
+    "type": "",
+    "name": "Alien Artifact",
+    "img": "https://i.imgur.com/plx3c2I.png",
+    "symbol": "close up on someones hands trying to decypher an object radiating energy",
+    "meaning": "foreign, intregue, and special powers",
+    "lifeExamples": "intregue on complex topics, unfathomable potential, need to solve a puzzle",
+    "question": "When given a problem how will you see opportunity?",
+    "quote": "",
+    "quoteSource": ""
+  },
+  {
+    "id": 92,
+    "suit": "",
+    "type": "",
+    "name": "Compass Rose",
+    "img": "https://i.imgur.com/urPDlNW.png",
+    "symbol": "a steampunk compass with many dials",
+    "meaning": "certainty, focus, intent",
+    "lifeExamples": "getting calibrated, having a clear direction to pursue, no longer feeling lost",
+    "question": "Where do you need to go?",
+    "quote": "Not all those who wander are lost.",
+    "quoteSource": "J.R.R. Tolkien"
+  },
+  {
+    "id": 93,
+    "suit": "",
+    "type": "",
+    "name": "Unforgettable Act",
+    "img": "https://i.imgur.com/Gqi2FFf.png",
+    "symbol": "a faceless person giving all they have",
+    "meaning": "monumentous, disbelief in accomplishment, potentially a great trade",
+    "lifeExamples": "tremendous victory after great effort or sacrafise, a promotion, a separation from something unhealthy for you",
+    "question": "How can you be monumentous?",
+    "quote": "What you do makes a difference, and you have to decide what kind of difference you want to make.",
+    "quoteSource": "Jane Goodall"
+  },
+  {
+    "id": 94,
+    "suit": "",
+    "type": "",
+    "name": "Subconscious Flow",
+    "img": "https://i.imgur.com/VcXi5lH.png",
+    "symbol": "visual representation of cerebral energy flowing powerfully",
+    "meaning": "effortless creativity, find your place, unlocked power",
+    "lifeExamples": "vivid dreams, passions you wish to make a masterpiece, your happy place",
+    "question": "Why do somethings come effortlessly?",
+    "quote": "Effortless is the result of tireless effort.",
+    "quoteSource": "Rick Rubin"
+  },
+  {
+    "id": 95,
+    "suit": "",
+    "type": "",
+    "name": "Bear Trap",
+    "img": "https://i.imgur.com/FkH37ik.png",
+    "symbol": "mechanical bear trap, often used to symbolize danger, risk, or a hidden threat",
+    "meaning": "caught and bleeding, hunted, waiting for doom",
+    "lifeExamples": "forced travels, serious injury, unagreed to commitments, a sense of persecution",
+    "question": "What are your options and how can you mitigate these commitments?",
+    "quote": "It's not the load that breaks you down, it's the way you carry it.",
+    "quoteSource": "Lena Horne"
+  },
+  {
+    "id": 96,
+    "suit": "",
+    "type": "",
+    "name": "Magnifying Glass",
+    "img": "https://i.imgur.com/RKsy63P.png",
+    "symbol": "search, investigation, or scrutiny",
+    "meaning": "examine, look closely, search for",
+    "lifeExamples": "need to have attention on details, research, bringing evidence together, fact checking",
+    "question": "How can you ensure the accuracy and reliability of your sources of info?",
+    "quote": "Truth is powerful and it prevails.",
+    "quoteSource": "Sojourner Truth"
+  },
+  {
+    "id": 97,
+    "suit": "",
+    "type": "",
+    "name": "Snake Skin",
+    "img": "https://i.imgur.com/uMSx1oz.png",
+    "symbol": "snake shedding its skin, representing change, renewal, or the discarding of old layers",
+    "meaning": "allow for release, move on, shed what no longer belongs",
+    "lifeExamples": "growing up, releasing grudges, forgiveness, ending habits",
+    "question": "What lessons have I learned from these experiences that have shaped me?",
+    "quote": "",
+    "quoteSource": ""
+  },
+  {
+    "id": 98,
+    "suit": "",
+    "type": "",
+    "name": "The Skunk",
+    "img": "https://i.imgur.com/8Yt2K6U.png",
+    "symbol": "Skunk peacefully exploring the forest floor ",
+    "meaning": "the ultimate pacifist, fearless, steadfast, and unchallenged leader",
+    "lifeExamples": "need for courage and diplomacy, being okay with making a stink, citizenship with boundaries",
+    "question": "How can you assertively communicate your needs and boundaries without escalating conflict?",
+    "quote": "Speak your mind, even if your voice shakes.",
+    "quoteSource": "Maggie Kuhn"
+  },
+  {
+    "id": 99,
+    "suit": "",
+    "type": "",
+    "name": "Healer Shadow",
+    "img": "https://i.imgur.com/NMCr0hB.png",
+    "symbol": "Darkness healing light in a sense of alchemy",
+    "meaning": "nurturing figure that may carry hidden pain, trauma, or aspects of themselves that they haven't healed",
+    "lifeExamples": "alchemy from something painful, shadow work, self-examination",
+    "question": "How can you acknowledge and integrate the shadow aspects of your personality?",
+    "quote": "",
+    "quoteSource": ""
+  },
+  {
+    "id": 100,
+    "suit": "",
+    "type": "",
+    "name": "Spoken Word",
+    "img": "https://i.imgur.com/U1XHLV5.png",
+    "symbol": "Someone speaking in symbols and waves",
+    "meaning": "ability to influence, inspire, or change through verbal expression that underscores the importance of storytelling",
+    "lifeExamples": "concentration on storytelling, controling your narrative, confidence in speaking your truth",
+    "question": "What are the key messages you want to convey through your story?",
+    "quote": "Knowledge speaks, but wisdom listens.",
+    "quoteSource": "Jimi Hendrix"
+  },
+  {
+    "id": 101,
+    "suit": "",
+    "type": "",
+    "name": "Unpaved Road",
+    "img": "https://i.imgur.com/uc1HEvd.png",
+    "symbol": "rocky unpaved road through the woods",
+    "meaning": "journey or path that is less traveled, rugged, unconventional forging one's own path, or facing uncharted experiences",
+    "lifeExamples": "acknowledging it is not going to be smooth or easy, adjusting velocity, being aware of the impact it will have on you and others",
+    "question": "How can you remain resilient and adaptive in the face of setbacks?",
+    "quote": "",
+    "quoteSource": ""
+  },
+  {
+    "id": 102,
+    "suit": "",
+    "type": "",
+    "name": "Soul Tribe",
+    "img": "https://i.imgur.com/4uPtmPb.png",
+    "symbol": "collection of spirits celebrating around a magical fire",
+    "meaning": "deeply connect and resonate with one another on a spiritual or emotional level describes mutual understanding, shared values, or intangible bonds",
+    "lifeExamples": "fueling connection, intimacy, celebrating your weird",
+    "question": "What unique aspects of your personality can embrace and share them with others?",
+    "quote": "",
+    "quoteSource": ""
+  },
+  {
+    "id": 103,
+    "suit": "",
+    "type": "",
+    "name": "Turtle Shell",
+    "img": "https://i.imgur.com/Va9sil0.png",
+    "symbol": "empty turtle shell",
+    "meaning": "idea of carrying one's home or safety with them, as well as the concept of retreating or shielding oneself from external influences or harm",
+    "lifeExamples": "deliberately slowing down, determining if you are retreating, or a need to come out of your shell",
+    "question": "Do you need to protect yourself by slowing down to go fast?",
+    "quote": "Sometimes you have to go slow to go fast.",
+    "quoteSource": "Jeff Olson"
+  },
+  {
+    "id": 104,
+    "suit": "",
+    "type": "",
+    "name": "Flamingo Stance",
+    "img": "https://i.imgur.com/1Iao4fQ.png",
+    "symbol": "flamingo on one leg at the beach by the ocean",
+    "meaning": "effortless attention, bringing color to situations, accepted akwardness",
+    "lifeExamples": "being yourself, standing tall, showing your true colors",
+    "question": "How can you remain resilient in the face of criticism or misunderstanding?",
+    "quote": "No one can make you feel inferior without your consent.",
+    "quoteSource": "Eleanor Roosevelt"
+  },
+  {
+    "id": 105,
+    "suit": "",
+    "type": "",
+    "name": "Bull Fight",
+    "img": "https://i.imgur.com/hFQmd87.png",
+    "symbol": "bull bucking in spanish arena, trampled roses on the ground,",
+    "meaning": "forced to fight, cheered against, antagonized",
+    "lifeExamples": "being antagonized or attacked, under scrutiny, thrashing around",
+    "question": "What strategies can you use to protect your mental and emotional well-being in this situation?",
+    "quote": "Self-care is not self-indulgence, it is self-preservation.",
+    "quoteSource": "Audre Lorde"
+  },
+  {
+    "id": 106,
+    "suit": "",
+    "type": "",
+    "name": "Sea Monster",
+    "img": "https://i.imgur.com/O5PlKO9.png",
+    "symbol": "tentacles, shipwreck, stormy ocean",
+    "meaning": "legendary power, misunderstood, surprise attack ",
+    "lifeExamples": "cautious embracement of the unknown, being misunderstood, facing your fear",
+    "question": "What is the nature of the fear your are facing, and what can it teach you about yourself?",
+    "quote": "Fear is the mind-killer.",
+    "quoteSource": "Frank Herbert, Dune"
+  },
+  {
+    "id": 107,
+    "suit": "",
+    "type": "",
+    "name": "Eternal Torch",
+    "img": "https://i.imgur.com/OcYcvVQ.png",
+    "symbol": "well engineered torch that illuminates a dark place",
+    "meaning": "unending light, indisputable truth, trust",
+    "lifeExamples": "unwavering trust, pursuit of the truth, exposing falsehoods",
+    "question": "What is the most important thing you know beyond a shadow of doubt?",
+    "quote": "The only true wisdom is in knowing you know nothing.",
+    "quoteSource": "Socrates"
+  },
+  {
+    "id": 108,
+    "suit": "",
+    "type": "",
+    "name": "Essential Joker",
+    "img": "https://i.imgur.com/yfjJ1pE.png",
+    "symbol": "an aged clown forcing an exaggerated smile",
+    "meaning": "need to laugh, absurdity, questioning society",
+    "lifeExamples": "laughing it off, dismissal of aburdities, still having fun during the tough times",
+    "question": "Why so serious?",
+    "quote": "Life is too important to be taken seriously",
+    "quoteSource": "Oscar Wilde"
   }
 ]
