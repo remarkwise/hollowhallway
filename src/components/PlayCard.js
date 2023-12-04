@@ -2,11 +2,16 @@ import React from "react";
 import { useState } from "react";
 import "../css/PlayCard.css";
 
+let PlayCardCount = 0;
+
 const PlayCardHead = ({ title }) => {
   return <div className="play-card-title">{title}</div>;
 };
 
-let PlayCardCount = 0;
+const PlayCardType = ({ type }) => {
+  return <div className="play-card-type">{type}</div>;
+};
+
 const PlayCard = ({ cardType, ...props }) => {
   const obj = props.obj;
   const [isActive, setIsActive] = useState(false);
@@ -43,6 +48,7 @@ const PlayCard = ({ cardType, ...props }) => {
             style={{ backgroundImage: "url(" + obj.img + ")" }}
           >
             <PlayCardHead title={title} />
+            <PlayCardType type={cardType} />
           </div>
         </div>
       </div>

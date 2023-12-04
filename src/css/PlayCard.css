@@ -119,3 +119,17 @@
   border-top: 3px #999 double;
   padding: 1% 0;
 }
+.play-card-type {
+  display: block;
+  background: rgba(255, 245, 255, 0.3);
+  border-radius: 0 0 3px 3px;
+  position: absolute;
+  top: 100%;
+  right: -2px;
+  text-align: left;
+  font-size: 50%;
+  line-height: 1;
+  margin: 0;
+  padding: 7px 3px 3px 3px;
+  text-shadow: 0 0 3px #ffffff;
+}

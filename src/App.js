@@ -12,7 +12,7 @@ import Plan from "./components/Plan";
 import StoryCards from "./components/StoryCards";
 
 const appTitle = "Hollow Hallway";
-const versionNumber = "0.6.14";
+const versionNumber = "0.6.15";
 
 const App = () => {
   // Form
